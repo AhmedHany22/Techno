@@ -9,7 +9,10 @@
   font-size: 1.5rem;
   color: royalblue;
 }
-
+.btn {
+    border-radius: 50px;
+    width: 130px;
+}
 .last-word {
   text-align: right;
 }
