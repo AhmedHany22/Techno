@@ -7,7 +7,7 @@ import { Button, Form } from 'react-bootstrap';
 const Footer = () => {
   return (
     <>
-      <footer class="container bg-white pt-5 mt-5">
+      <footer class="container bg-white pt-5 ">
         <div class="p-5 mb-5 First_Section">
           <h3 class="text-center pt-5 pb-3">
             Subscribe to our Newsletter and get 40% off on all products
