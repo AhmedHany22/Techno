@@ -1,0 +1,44 @@
+.logo{
+  width:130px;
+  height:50px;
+}
+.First_Section{
+  background-image : url(../../assets/background.png);
+}
+.awesome {
+  font-size: 1.5rem;
+  color: royalblue;
+}
+
+.last-word {
+  text-align: right;
+}
+
+.footer-padding {
+  padding-top: 10%;
+  padding-bottom: 5%;
+}
+
+.e {
+  width: 350px;
+  height: 45px;
+  border-radius: 5px;
+  border: 1px solid gainsboro;
+}
+
+@media only screen and (max-width: 780px) {
+  .last-word {
+    text-align: left;
+  }
+
+  .footer-padding {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .footer-padding {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
