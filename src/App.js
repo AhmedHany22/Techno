@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
-import
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <>
+      <Footer></Footer>
     </>
   );
 }
