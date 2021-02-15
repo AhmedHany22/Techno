@@ -287,7 +287,7 @@ const Checkout = () => {
               </table>
             </div>
             <hr/>
-            <a href="Shopping-Cart.html" class="btn rounded-0 btn-outline-dark">Back</a>
+            <a href="Shopping-Cart.html" className="btn rounded-0 btn-outline-dark">Back</a>
             <a href="#" class="btn rounded-0 btn-outline-dark active">Next</a>
             <br/>
             <br/>
@@ -323,47 +323,7 @@ const Checkout = () => {
     </div>
   </section>
 
-  <div class="bg-white py-5">
-    <div class="container text-left">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="d-flex">
-            <div class="px-3">
-              <i class="fa fa-sync-alt text-primary"></i>
-            </div>
-            <div>
-              <p>Easy return</p>
-              <p class="text-muted">30 day return window without any question asked, just peace of mind.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="d-flex">
-            <div class="px-3">
-              <i class="fa fa-globe-africa text-primary"></i>
-            </div>
-            <div>
-              <p>Global shipping</p>
-              <p class="text-muted">We accept order around the globe and deliver to 120 countries.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="d-flex">
-            <div class="px-3">
-              <i class="fa fa-credit-card text-primary"></i>
-            </div>
-            <div>
-              <p>Secure payment</p>
-              <p class="text-muted">Encryption of standard SSL with 128-bit symmetric key</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
     </>
     )
   }
   export default Checkout;
-

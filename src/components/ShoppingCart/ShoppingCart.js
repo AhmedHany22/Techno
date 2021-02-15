@@ -13,7 +13,7 @@ const ShoppingCart = () => {
        </div>
      </div>
    </section>
-  
+
    <div class="container p-0">
      <div class="row mx-1 my-4 bg-white Cart_Row">
        <div class="col-md-2 col-6 pl-1 border-right">
@@ -40,7 +40,7 @@ const ShoppingCart = () => {
            <p class="item_header">Order amount</p>
            <p class="price">200$</p>
          </div>
-        
+
          <div class="col-12 row p-0">
            <div class="col-4 p-0">
              <i class="fa fa-star-o" title="5"></i>
@@ -58,7 +58,7 @@ const ShoppingCart = () => {
        </div>
      </div>
    </div>
-   
+
    <div class="container p-0">
      <div class="row mx-1 my-4 bg-white Cart_Row">
        <div class="col-md-2 col-6 pl-1 border-right">
@@ -85,7 +85,7 @@ const ShoppingCart = () => {
            <p class="item_header">Order amount</p>
            <p class="price">200$</p>
          </div>
-        
+
          <div class="col-12 row p-0">
            <div class="col-4 p-0">
              <i class="fa fa-star-o" title="5"></i>
@@ -103,7 +103,7 @@ const ShoppingCart = () => {
        </div>
      </div>
    </div>
-   
+
    <div class="container p-0">
      <div class="row mx-1 my-4 bg-white Cart_Row">
        <div class="col-md-2 col-6 pl-1 border-right">
@@ -130,7 +130,7 @@ const ShoppingCart = () => {
            <p class="item_header">Order amount</p>
            <p class="price">200$</p>
          </div>
-        
+
          <div class="col-12 row p-0">
            <div class="col-4 p-0">
              <i class="fa fa-star-o" title="5"></i>
@@ -148,7 +148,7 @@ const ShoppingCart = () => {
        </div>
      </div>
    </div>
- 
+
    <div class="container p-0">
      <div class="row mx-1 my-4 bg-white Cart_Row">
        <div class="col-md-2 col-6 pl-1 border-right">
@@ -175,7 +175,7 @@ const ShoppingCart = () => {
            <p class="item_header">Order amount</p>
            <p class="price">200$</p>
          </div>
-        
+
          <div class="col-12 row p-0">
            <div class="col-4 p-0">
              <i class="fa fa-star-o" title="5"></i>
@@ -193,14 +193,14 @@ const ShoppingCart = () => {
        </div>
      </div>
    </div>
-  
+
    <div class="row discount_section bg-light Cart_Row py-0">
      <div class="col-md-6 pt-3 text-left bg-white">
        <h4>DISCOUNT CODES</h4>
        <p>Enter your coupon code if you have one.</p>
        <div class="form-group">
          <input type="text" placeholder="Apply Coupon *" class="form-control" name="name"/>
-         <button class="btn rounded-0 btn-outline-dark mt-2" type="button">Apply Coupon</button>
+         <button class="btn rounded-0 btn-outline-dark mt-2 mr-3" type="button">Apply Coupon</button>
          <button class="btn rounded-0 btn-outline-dark mt-2" type="button">proceed to Checkout</button>
        </div>
      </div>
@@ -218,50 +218,6 @@ const ShoppingCart = () => {
            <span>Grand Total</span></div>
          <div class="col-6 py-2">
            <span>$229.00</span></div>
-       </div>
-     </div>
-   </div>
-   <div class="container text-left">
-
-   </div>
-
-
-   <div class="bg-white py-5">
-     <div class="container text-left">
-       <div class="row">
-         <div class="col-md-4">
-           <div class="d-flex">
-             <div class="px-3">
-               <i class="fa fa-sync-alt text-primary"></i>
-             </div>
-             <div>
-               <p>Easy return</p>
-               <p class="text-muted">30 day return window without any question asked, just peace of mind.</p>
-             </div>
-           </div>
-         </div>
-         <div class="col-md-4">
-           <div class="d-flex">
-             <div class="px-3">
-               <i class="fa fa-globe-africa text-primary"></i>
-             </div>
-             <div>
-               <p>Global shipping</p>
-               <p class="text-muted">We accept order around the globe and deliver to 120 countries.</p>
-             </div>
-           </div>
-         </div>
-         <div class="col-md-4">
-           <div class="d-flex">
-             <div class="px-3">
-               <i class="fa fa-credit-card text-primary"></i>
-             </div>
-             <div>
-               <p>Secure payment</p>
-               <p class="text-muted">Encryption of standard SSL with 128-bit symmetric key</p>
-             </div>
-           </div>
-         </div>
        </div>
      </div>
    </div>
