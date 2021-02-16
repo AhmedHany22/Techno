@@ -7,11 +7,12 @@ import { Button, Form } from 'react-bootstrap';
 const Footer = () => {
   return (
     <>
-      <footer class="bg-white pl-5">
-        <div class="py-5 mb-5 First_Section">
-          <h3 class="text-center pt-5 pb-3">
+      <footer class="bg-white">
+        <hr className="m-0" />
+        <div class="py-5  First_Section">
+          <h4 class="text-center pt-5 pb-3">
             Subscribe to our Newsletter and get 40% off on all products
-          </h3>
+          </h4>
           <div class="text-center pb-5">
             <Form>
               <Form.Group controlId="formBasicEmail">
@@ -21,49 +22,50 @@ const Footer = () => {
             </Form>
           </div>
         </div>
-        <div class="row w-100 pt-3 pl-5">
-            <div class="col-md-4 d-flex">
+        <hr className="m-0" />
+        <div class="row w-100 pt-4 pb-2 leftPadding mx-0">
+            <div class="col-md-4 d-flex px-4 ">
               <div class="pr-3">
                 <i class="fa fa-history awesome"></i>
               </div>
               <div>
-                <p>Easy return</p>
-                <p class="text-muted">
+                <h6 className="mb-2">Easy return</h6>
+                <p class="footerText">
                   30 day return window without any question asked, just peace of
                   mind.
                 </p>
               </div>
             </div>
-            <div class="col-md-4 d-flex">
+            <div class="col-md-4 d-flex px-5">
               <div class="pr-3">
                 <i class="fa fa-globe awesome"></i>
               </div>
               <div>
-                <p>Global shipping</p>
-                <p class="text-muted">
+                <h6 className="mb-2">Global shipping</h6>
+                <p class="footerText">
                   We accept order around the globe and deliver to 120 countries.
                 </p>
               </div>
             </div>
-            <div class="col-md-4 d-flex">
+            <div class="col-md-4 d-flex  px-4">
               <div class="pr-3">
                 <i class="fa fa-credit-card awesome"></i>
               </div>
               <div>
-                <p>Secure payment</p>
-                <p class="text-muted">
+                <h6 className="mb-2">Secure payment</h6>
+                <p class="footerText">
                   Encryption of standard SSL with 128-bit symmetric key
                 </p>
               </div>
             </div>
         </div>
-        <div class="row w-100 pl-5">
-            <div class="col-md-4 footer-padding">
-              <h4>Techno</h4>
-              <div class="text-muted">
-                <p>Jl. 'Alma No.2</p>
-                <p>Semanding 35, Surabaia</p>
-                <p>Tel: +6281 234 567</p>
+        <div class="row w-100 leftPadding bg-light mx-0">
+            <div class="col-md-4 footer-padding pl-4">
+              <h3 className="mb-4">Techno</h3>
+              <div class="footerText">
+                <p className="mb-0">Jl. 'Alma No.2</p>
+                <p className="mb-0">Semanding 35, Surabaia</p>
+                <p className="mb-0">Tel: +6281 234 567</p>
                 <p>superly@issupersekaly.com</p>
               </div>
               <div>
@@ -82,31 +84,19 @@ const Footer = () => {
               </div>
             </div>
             <div class="col-md-2 footer-padding">
-              <h5 class="mb-4">Company</h5>
-              <a class="mb-2 text-decoration-none d-block" href="#">
-                About
-              </a>
-              <a class="mb-2 text-decoration-none d-block" href="#">
-                Contact
-              </a>
+              <h6 class="mb-3 font-weight-bold pt-3">Company</h6>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">About</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Contact</a>
             </div>
             <div class="col-md-3 footer-padding">
-              <h5 class="mb-4">Categories</h5>
-              <a class="mb-2 text-decoration-none d-block" href="#">
-                Computer accessories
-              </a>
-              <a class="mb-2 text-decoration-none d-block" href="#">
-                Computer pc
-              </a>
-              <a class="mb-2 text-decoration-none d-block" href="#">
-                Laptop
-              </a>
-              <a class="mb-2 text-decoration-none d-block" href="#">
-                Smart screen
-              </a>
+              <h6 class="mb-3 font-weight-bold pt-3">Categories</h6>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Computer pc</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Laptop</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Accessories</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Smart screen</a>
             </div>
             <div class="col-md-3 footer-padding">
-              <h5 class="mb-4">Get Our Store App</h5>
+              <h6 class="mb-3 font-weight-bold pt-3">Get Our Store App</h6>
               <p>
                 <img src={googleImg} className="logo" />
               </p>
@@ -115,18 +105,14 @@ const Footer = () => {
               </p>
             </div>
         </div>
-        <hr/>
-        <div class="row w-100 px-5">
-            <div class="col-sm-12 col-md-9 row">
-              <span class="text-muted pr-3">
-                ©2020 Super sekaly. All rights reserved.
-              </span>
-              <span class="text-muted pr-3">Privacy Policy</span>
-              <span class="text-muted pr-3">Term Of Service</span>
-            </div>
-            <div class="col-sm-12 col-md-12 px-0">
-              <p class="text-muted last-word">Made in Surabaja, Indonesia</p>
-            </div>
+        <hr className="my-0 lastSection" />
+        <div class="row bg-light pt-3 pb-5 w-100">
+          <div className="lastSection">
+            <span class="text-muted pr-3">©2020 Super sekaly. All rights reserved.</span>
+            <span class="text-muted pr-3">Privacy Policy</span>
+            <span class="text-muted pr-3">Term Of Service</span>
+            <span class="text-muted pl-5">Made in Surabaja, Indonesia</span>
+          </div>
         </div>
       </footer>
     </>
