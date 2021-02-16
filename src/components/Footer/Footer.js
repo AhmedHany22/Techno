@@ -85,15 +85,15 @@ const Footer = () => {
             </div>
             <div class="col-md-2 footer-padding">
               <h6 class="mb-3 font-weight-bold pt-3">Company</h6>
-              <a class="mb-2 text-decoration-none d-block text-dark" href="#">About</a>
-              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Contact</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="/about">About</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="/contact">Contact</a>
             </div>
             <div class="col-md-3 footer-padding">
               <h6 class="mb-3 font-weight-bold pt-3">Categories</h6>
-              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Computer pc</a>
-              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Laptop</a>
-              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Accessories</a>
-              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Smart screen</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="/">Computer pc</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="/">Laptop</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="/">Accessories</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="/">Smart screen</a>
             </div>
             <div class="col-md-3 footer-padding">
               <h6 class="mb-3 font-weight-bold pt-3">Get Our Store App</h6>

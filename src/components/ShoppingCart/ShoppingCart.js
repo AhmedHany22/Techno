@@ -9,7 +9,7 @@ const ShoppingCart = () => {
      <div class="container col-lg-5 col-md-6 col-sm-8 col-9 py-4 bg-white text-center myBorder">
        <h1 class="mb-3 text-dark">Shopping Cart</h1>
        <div class="msg">
-         Missed something ?<a href="../Aisha/shop.html" class="text-secondary">Continue shopping</a>
+         Missed something ?<a href="/" class="text-secondary">Continue shopping</a>
        </div>
      </div>
    </section>
@@ -24,7 +24,7 @@ const ShoppingCart = () => {
            <a href="#" class="seller_name">Suspensions</a>
          </p>
          <p>
-           <a href="../Eman/products.html" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+           <a href="/" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
          </p>
        </div>
        <div class="col-md-6 col-12 row pr-0">
@@ -69,7 +69,7 @@ const ShoppingCart = () => {
            <a href="#" class="seller_name">Suspensions</a>
          </p>
          <p>
-           <a href="../Eman/products.html" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+           <a href="/" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
          </p>
        </div>
        <div class="col-md-6 col-12 row pr-0">
@@ -114,7 +114,7 @@ const ShoppingCart = () => {
            <a href="#" class="seller_name">Suspensions</a>
          </p>
          <p>
-           <a href="../Eman/products.html" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+           <a href="/" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
          </p>
        </div>
        <div class="col-md-6 col-12 row pr-0">
@@ -159,7 +159,7 @@ const ShoppingCart = () => {
            <a href="#" class="seller_name">Suspensions</a>
          </p>
          <p>
-           <a href="../Eman/products.html" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+           <a href="/" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
          </p>
        </div>
        <div class="col-md-6 col-12 row pr-0">
