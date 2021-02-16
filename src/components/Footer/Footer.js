@@ -7,125 +7,111 @@ import { Button, Form } from 'react-bootstrap';
 const Footer = () => {
   return (
     <>
-      <footer class="container bg-white pt-5 ">
-        <div class="p-5 mb-5 First_Section">
-          <h3 class="text-center pt-5 pb-3">
+      <footer class="bg-white">
+        <hr className="m-0" />
+        <div class="py-5  First_Section">
+          <h4 class="text-center pt-5 pb-3">
             Subscribe to our Newsletter and get 40% off on all products
-          </h3>
+          </h4>
           <div class="text-center pb-5">
             <Form>
               <Form.Group controlId="formBasicEmail">
-              <Form.Control type="email" placeholder="Enter your email address" className="w-50 d-inline"/>
-                <Button variant="primary" type="submit" className="ml-3">Subscribe</Button>
+                <Form.Control type="email" placeholder="Enter your email address" className="inputwidth d-inline"/>
+                <Button variant="primary" type="submit" className="ml-3 mybtn">Subscribe</Button>
               </Form.Group>
             </Form>
           </div>
         </div>
-        <div class="row py-3">
-          <div class="col-md-4 d-flex">
-            <div class="pr-3">
-              <i class="fa fa-history awesome"></i>
+        <hr className="m-0" />
+        <div class="row w-100 pt-4 pb-2 leftPadding mx-0">
+            <div class="col-md-4 d-flex px-4 ">
+              <div class="pr-3">
+                <i class="fa fa-history awesome"></i>
+              </div>
+              <div>
+                <h6 className="mb-2">Easy return</h6>
+                <p class="footerText">
+                  30 day return window without any question asked, just peace of
+                  mind.
+                </p>
+              </div>
             </div>
-            <div>
-              <p>Easy return</p>
-              <p class="text-muted">
-                30 day return window without any question asked, just peace of
-                mind.
-              </p>
+            <div class="col-md-4 d-flex px-5">
+              <div class="pr-3">
+                <i class="fa fa-globe awesome"></i>
+              </div>
+              <div>
+                <h6 className="mb-2">Global shipping</h6>
+                <p class="footerText">
+                  We accept order around the globe and deliver to 120 countries.
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4 d-flex">
-            <div class="pr-3">
-              <i class="fa fa-globe awesome"></i>
+            <div class="col-md-4 d-flex  px-4">
+              <div class="pr-3">
+                <i class="fa fa-credit-card awesome"></i>
+              </div>
+              <div>
+                <h6 className="mb-2">Secure payment</h6>
+                <p class="footerText">
+                  Encryption of standard SSL with 128-bit symmetric key
+                </p>
+              </div>
             </div>
-            <div>
-              <p>Global shipping</p>
-              <p class="text-muted">
-                We accept order around the globe and deliver to 120 countries.
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4 d-flex">
-            <div class="pr-3">
-              <i class="fa fa-credit-card awesome"></i>
-            </div>
-            <div>
-              <p>Secure payment</p>
-              <p class="text-muted">
-                Encryption of standard SSL with 128-bit symmetric key
-              </p>
-            </div>
-          </div>
         </div>
-        <div class="row">
-          <div class="col-md-4 footer-padding">
-            <h4>Techno</h4>
-            <div class="text-muted">
-              <p>Jl. 'Alma No.2</p>
-              <p>Semanding 35, Surabaia</p>
-              <p>Tel: +6281 234 567</p>
-              <p>superly@issupersekaly.com</p>
+        <div class="row w-100 leftPadding bg-light mx-0">
+            <div class="col-md-4 footer-padding pl-4">
+              <h3 className="mb-4">Techno</h3>
+              <div class="footerText">
+                <p className="mb-0">Jl. 'Alma No.2</p>
+                <p className="mb-0">Semanding 35, Surabaia</p>
+                <p className="mb-0">Tel: +6281 234 567</p>
+                <p>superly@issupersekaly.com</p>
+              </div>
+              <div>
+                <a href="https://www.instagram.com/" target="_blank">
+                  <i class="mr-3 fa fa-instagram awesome"></i>
+                </a>
+                <a href="https://www.facebook.com/" target="_blank">
+                  <i class="mr-3 fa fa-facebook-f awesome"></i>
+                </a>
+                <a href="https://www.youtube.com/" target="_blank">
+                  <i class="mr-3 fa fa-youtube awesome"></i>
+                </a>
+                <a href="https://www.linkedin.com/" target="_blank">
+                  <i class="mr-3 fa fa-linkedin awesome"></i>
+                </a>
+              </div>
             </div>
-            <div>
-              <a href="https://www.instagram.com/" target="_blank">
-                <i class="mr-3 fa fa-instagram awesome"></i>
-              </a>
-              <a href="https://www.facebook.com/" target="_blank">
-                <i class="mr-3 fa fa-facebook-f awesome"></i>
-              </a>
-              <a href="https://www.youtube.com/" target="_blank">
-                <i class="mr-3 fa fa-youtube awesome"></i>
-              </a>
-              <a href="https://www.linkedin.com/" target="_blank">
-                <i class="mr-3 fa fa-linkedin awesome"></i>
-              </a>
+            <div class="col-md-2 footer-padding">
+              <h6 class="mb-3 font-weight-bold pt-3">Company</h6>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">About</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Contact</a>
             </div>
-          </div>
-          <div class="col-md-2 footer-padding">
-            <h5 class="mb-4">Company</h5>
-            <a class="mb-2 text-decoration-none d-block" href="#">
-              About
-            </a>
-            <a class="mb-2 text-decoration-none d-block" href="#">
-              Contact
-            </a>
-          </div>
-          <div class="col-md-3 footer-padding">
-            <h5 class="mb-4">Categories</h5>
-            <a class="mb-2 text-decoration-none d-block" href="#">
-              Computer accessories
-            </a>
-            <a class="mb-2 text-decoration-none d-block" href="#">
-              Computer pc
-            </a>
-            <a class="mb-2 text-decoration-none d-block" href="#">
-              Laptop
-            </a>
-            <a class="mb-2 text-decoration-none d-block" href="#">
-              Smart screen
-            </a>
-          </div>
-          <div class="col-md-3 footer-padding">
-            <h5 class="mb-4">Get Our Store App</h5>
-            <p>
-              <img src={googleImg} className="logo" />
-            </p>
-            <p>
-              <img src={appleImg} className="logo" />
-            </p>
-          </div>
+            <div class="col-md-3 footer-padding">
+              <h6 class="mb-3 font-weight-bold pt-3">Categories</h6>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Computer pc</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Laptop</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Accessories</a>
+              <a class="mb-2 text-decoration-none d-block text-dark" href="#">Smart screen</a>
+            </div>
+            <div class="col-md-3 footer-padding">
+              <h6 class="mb-3 font-weight-bold pt-3">Get Our Store App</h6>
+              <p>
+                <img src={googleImg} className="logo" />
+              </p>
+              <p>
+                <img src={appleImg} className="logo" />
+              </p>
+            </div>
         </div>
-        <hr/>
-        <div class="row pt-3">
-          <div class="col-sm-12 col-md-9 row">
-            <span class="text-muted pr-3">
-              ©2020 Super sekaly. All rights reserved.
-            </span>
+        <hr className="my-0 lastSection" />
+        <div class="row bg-light pt-3 pb-5 w-100">
+          <div className="lastSection">
+            <span class="text-muted pr-3">©2020 Super sekaly. All rights reserved.</span>
             <span class="text-muted pr-3">Privacy Policy</span>
             <span class="text-muted pr-3">Term Of Service</span>
-          </div>
-          <div class="col-sm-12 col-md-12 px-0">
-            <p class="text-muted last-word">Made in Surabaja, Indonesia</p>
+            <span class="text-muted pl-5">Made in Surabaja, Indonesia</span>
           </div>
         </div>
       </footer>

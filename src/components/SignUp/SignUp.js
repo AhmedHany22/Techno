@@ -105,9 +105,9 @@ const SignUp = () => {
 			</div>
 			<div class="form-group">
 				<label class="form-check-label">
-                <input type="checkbox" required="required"/>
-                 I accept the <a href="#">Terms of Use</a> &amp; 
-                 <a href="#">Privacy Policy</a></label>
+                <input type="checkbox" required="required" className="mr-2"/>
+                I accept the <a href="#">Terms of Use</a> &amp;<a href="#">Privacy Policy</a>
+                </label>
 			</div>
 			<div class="form-group">
 				<button type="submit" 
