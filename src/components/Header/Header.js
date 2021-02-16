@@ -16,23 +16,23 @@ const Header = () => {
          <div class="collapse navbar-collapse" id="collapsibleNavId">
            <ul class="navbar-nav m-auto mt-2 mt-lg-0">
              <li class="nav-item">
-               <a class="nav-link mx-4 text-dark myNav" href="../Nancy/home.html">Home</a>
+               <a class="nav-link mx-4 text-dark myNav font-weight-bold" href="../Nancy/home.html">Home</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link mx-4 text-dark myNav" href="../Aisha/about.html">About</a>
+               <a class="nav-link mx-4 text-dark myNav font-weight-bold" href="../Aisha/about.html">About</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link mx-4 text-dark myNav" href="../Aisha/shop.html">Shop</a>
+               <a class="nav-link mx-4 text-dark myNav font-weight-bold" href="../Aisha/shop.html">Shop</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link mx-4 text-dark myNav" href="../Eman/contant.html">Contact</a>
+               <a class="nav-link mx-4 text-dark myNav font-weight-bold" href="../Eman/contant.html">Contact</a>
              </li>
            </ul>
            <div class="d-flex float-right navbar-expand-sm ">
              <ul class="navbar-nav float-right ">
                <li class="nav-item dropdown">
                  <a class="nav-link dropdown-toggle icon" href="#" id="navbardrop" data-toggle="dropdown">
-                   <i class="fa fa-user-circle"></i>
+                   <i class="fas fa-user-circle"></i>
                  </a>
                  <div class="dropdown-menu">
                    <a class="dropdown-item" href="../Eman/login.html">Sign in</a>
@@ -41,7 +41,7 @@ const Header = () => {
                </li>
                <li class="nav-item dropdown">
                  <a class="nav-link dropdown-toggle icon" href="#" id="navbardrop" data-toggle="dropdown">
-                   <i class="fa fa-shopping-cart"></i>
+                   <i class="fas fa-shopping-cart"></i>
                  </a>
                  <div class="dropdown-menu">
                    <a class="dropdown-item" href="Shopping-Cart.html">View cart</a>

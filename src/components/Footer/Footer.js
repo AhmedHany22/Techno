@@ -26,7 +26,7 @@ const Footer = () => {
         <div class="row w-100 pt-4 pb-2 leftPadding mx-0">
             <div class="col-md-4 d-flex px-4 ">
               <div class="pr-3">
-                <i class="fa fa-history awesome"></i>
+                <i class="fas fa-history awesome"></i>
               </div>
               <div>
                 <h6 className="mb-2">Easy return</h6>
@@ -38,7 +38,7 @@ const Footer = () => {
             </div>
             <div class="col-md-4 d-flex px-5">
               <div class="pr-3">
-                <i class="fa fa-globe awesome"></i>
+                <i class="fas fa-globe awesome"></i>
               </div>
               <div>
                 <h6 className="mb-2">Global shipping</h6>
@@ -49,7 +49,7 @@ const Footer = () => {
             </div>
             <div class="col-md-4 d-flex  px-4">
               <div class="pr-3">
-                <i class="fa fa-credit-card awesome"></i>
+                <i class="fas fa-credit-card awesome"></i>
               </div>
               <div>
                 <h6 className="mb-2">Secure payment</h6>
@@ -70,16 +70,16 @@ const Footer = () => {
               </div>
               <div>
                 <a href="https://www.instagram.com/" target="_blank">
-                  <i class="mr-3 fa fa-instagram awesome"></i>
+                  <i class="mr-3 fas fa-instagram awesome"></i>
                 </a>
                 <a href="https://www.facebook.com/" target="_blank">
-                  <i class="mr-3 fa fa-facebook-f awesome"></i>
+                  <i class="mr-3 fas fa-facebook-f awesome"></i>
                 </a>
                 <a href="https://www.youtube.com/" target="_blank">
-                  <i class="mr-3 fa fa-youtube awesome"></i>
+                  <i class="mr-3 fas fa-youtube awesome"></i>
                 </a>
                 <a href="https://www.linkedin.com/" target="_blank">
-                  <i class="mr-3 fa fa-linkedin awesome"></i>
+                  <i class="mr-3 fas fa-linkedin awesome"></i>
                 </a>
               </div>
             </div>
@@ -107,11 +107,11 @@ const Footer = () => {
         </div>
         <hr className="my-0 lastSection" />
         <div class="row bg-light pt-3 pb-5 w-100">
-          <div className="lastSection">
+          <div className="lastSection container">
             <span class="text-muted pr-3">©2020 Super sekaly. All rights reserved.</span>
             <span class="text-muted pr-3">Privacy Policy</span>
             <span class="text-muted pr-3">Term Of Service</span>
-            <span class="text-muted pl-5">Made in Surabaja, Indonesia</span>
+            <span class="text-muted ">Made in Surabaja, Indonesia</span>
           </div>
         </div>
       </footer>
