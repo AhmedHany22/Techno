@@ -1,16 +1,22 @@
 import './App.css';
-import logo from './logo.svg';
+import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
+import Routes from './Routes';
 import Header from './components/Header/Header';
-import Footer from "./components/Footer/Footer";
-import Home from "./components/Home/Home";
+
+import Footer from './components/Footer/Footer';
+
 
 function App() {
   return (
-    <>
-      <Header/>
-      <Home/>
-      <Footer/>
-    </>
+
+    <Router>
+      <Header />
+      <Routes />
+      <Footer />
+    </Router>
+
+
   );
 }
 
