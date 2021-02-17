@@ -1,3 +1,4 @@
+
 import React, { Suspense } from "react";
 import { Route, Switch } from "react-router-dom";
 
@@ -9,6 +10,7 @@ const ShoppingCart = React.lazy(() =>import("./components/ShoppingCart/ShoppingC
 const SignUp = React.lazy(() => import("./components/SignUp/SignUp"));
 const SignIn = React.lazy(() => import("./components/SignIn/SignIn"));
 const ProductDetail = React.lazy(() => import("./components/ProductDetail/ProductDetail"));
+const ProductList = React.lazy(() => import("./components/products/product-list/productList"));
 
 const Routes = () => {
   return (
@@ -22,6 +24,7 @@ const Routes = () => {
         <Route path="/checkout" exact component={Checkout} />
         <Route path="/shoppingCart" exact component={ShoppingCart} />
         <Route path="/details" exact component={ProductDetail} />
+        <Route path="/shop" exact component={ProductList} />
 
 
       </Switch>

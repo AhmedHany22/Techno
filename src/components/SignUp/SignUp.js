@@ -1,9 +1,11 @@
+
 import { useState } from "react";
 
 import "./SignUp.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const SignUp = () => {
+
   let re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   const [registerForm, setRegisterForm] = useState({ email: "", password: "" });
   const [registerErrors, setRegisterErrors] = useState({emailErrors: null,passwordErrors: null });

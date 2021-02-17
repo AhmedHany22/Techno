@@ -14,16 +14,16 @@ const Header = () => {
          <div class="collapse navbar-collapse" id="collapsibleNavId">
            <ul class="navbar-nav m-auto mt-2 mt-lg-0">
              <li class="nav-item">
-               <a class="nav-link mx-4 text-dark myNav font-weight-bold" href="/">Home</a>
+               <Link class="nav-link mx-4 text-dark myNav font-weight-bold" href="/">Home</Link>
              </li>
              <li class="nav-item">
                <a class="nav-link mx-4 text-dark myNav font-weight-bold" href="/shop">Shop</a>
              </li>
              <li class="nav-item">
-               <a class="nav-link mx-4 text-dark myNav font-weight-bold" href="/about">About</a>
+               <Link class="nav-link mx-4 text-dark myNav font-weight-bold" href="/about">About</Link>
              </li>
              <li class="nav-item">
-               <a class="nav-link mx-4 text-dark myNav font-weight-bold" href="/contact">Contact</a>
+               <Link class="nav-link mx-4 text-dark myNav font-weight-bold" href="/contact">Contact</Link>
              </li>
            </ul>
            <div class="d-flex float-right navbar-expand-sm ">
@@ -51,6 +51,7 @@ const Header = () => {
          </div>
        </div>
      </nav>
+
     </>
   );
 };

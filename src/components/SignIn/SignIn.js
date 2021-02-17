@@ -1,9 +1,11 @@
-import { useState } from "react";
+
+import {useState} from 'react';
 
 import "./SignIn.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const SignIn = () => {
+
   let re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   const [registerForm, setRegisterForm] = useState({ email: "", password: ""});
   const [registerErrors, setRegisterErrors] = useState({ emailErrors: null, passwordErrors: null});
@@ -45,6 +47,7 @@ const SignIn = () => {
     <>
       <div class="bodyLogin m-0">
         <div class="row">
+
           <div class="login bg-white ">
             <h1>Login</h1>
             <form>
@@ -73,6 +76,7 @@ const SignIn = () => {
         </div>
       </div>
     </>
+
   );
 };
 export default SignIn;

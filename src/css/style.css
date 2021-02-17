@@ -79,7 +79,8 @@
   font-size: 17px;
   line-height: 1.5; }
   .section .home a {
-    color: #556575; }
+    color: #556575;
+    cursor: pointer; }
     .section .home a:hover {
       color: #2B65EC;
       text-decoration: none;
@@ -88,7 +89,8 @@
     font-size: 14px !important;
     margin: 0; }
     .section .home .head a {
-      color: #556575; }
+      color: #556575;
+      cursor: pointer; }
       .section .home .head a:hover {
         color: #2B65EC;
         text-decoration: none;
@@ -179,7 +181,8 @@
     margin-left: 50px;
     font-weight: 500; }
     .section .layout .info a {
-      color: #556575; }
+      color: #556575;
+      cursor: pointer; }
       .section .layout .info a:hover {
         color: #2B65EC;
         text-decoration: none;
@@ -190,7 +193,8 @@
   font-size: 14px;
   margin-right: 20px; }
 .section .delivery a {
-  color: #556575; }
+  color: #556575;
+  cursor: pointer; }
   .section .delivery a:hover {
     color: #2B65EC;
     text-decoration: none;
@@ -208,7 +212,8 @@
   .section .share .fa-heart {
     font-size: 20px; }
   .section .share a {
-    color: #556575; }
+    color: #556575;
+    cursor: pointer; }
     .section .share a:hover {
       color: #2B65EC;
       text-decoration: none;
@@ -220,7 +225,8 @@
   font-size: 17px;
   line-height: 1.5; }
   .description a {
-    color: #556575; }
+    color: #556575;
+    cursor: pointer; }
     .description a:hover {
       color: #2B65EC;
       text-decoration: none;
@@ -235,7 +241,8 @@
       border-bottom: none;
       margin-bottom: 50px; }
     .description .tabs ul a {
-      color: #556575; }
+      color: #556575;
+      cursor: pointer; }
       .description .tabs ul a:hover {
         color: #2B65EC;
         text-decoration: none;
@@ -304,7 +311,8 @@
       color: #F9CE00;
       font-size: 14px; }
     .card .card-body a {
-      color: #556575; }
+      color: #556575;
+      cursor: pointer; }
       .card .card-body a:hover {
         color: #2B65EC;
         text-decoration: none;
@@ -330,7 +338,6 @@
   .card .card-img-overlay:hover .show {
     opacity: 1; }
   .card .card-img-overlay .show {
-    opacity: 0;
     position: absolute;
     top: 200px;
     left: 40px;
@@ -339,9 +346,11 @@
     padding: 10px;
     width: 170px;
     height: 50px;
-    border-radius: 30px; }
+    border-radius: 30px;
+    opacity: 0; }
     .card .card-img-overlay .show a {
-      color: #556575; }
+      color: #556575;
+      cursor: pointer; }
       .card .card-img-overlay .show a:hover {
         color: #2B65EC;
         text-decoration: none;
@@ -460,7 +469,8 @@
         text-align: center;
         margin-top: 20px; }
         .bodyLogin .row .login p a {
-          color: #556575; }
+          color: #556575;
+          cursor: pointer; }
           .bodyLogin .row .login p a:hover {
             color: #2B65EC;
             text-decoration: none;
