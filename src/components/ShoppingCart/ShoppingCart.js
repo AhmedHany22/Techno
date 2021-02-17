@@ -24,7 +24,7 @@ const ShoppingCart = () => {
            <a href="#" class="seller_name">Suspensions</a>
          </p>
          <p>
-           <a href="/" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+           <a href="/details" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
          </p>
        </div>
        <div class="col-md-6 col-12 row pr-0">
@@ -69,7 +69,7 @@ const ShoppingCart = () => {
            <a href="#" class="seller_name">Suspensions</a>
          </p>
          <p>
-           <a href="/" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+           <a href="/details" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
          </p>
        </div>
        <div class="col-md-6 col-12 row pr-0">
@@ -114,7 +114,7 @@ const ShoppingCart = () => {
            <a href="#" class="seller_name">Suspensions</a>
          </p>
          <p>
-           <a href="/" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+           <a href="/details" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
          </p>
        </div>
        <div class="col-md-6 col-12 row pr-0">
@@ -159,7 +159,7 @@ const ShoppingCart = () => {
            <a href="#" class="seller_name">Suspensions</a>
          </p>
          <p>
-           <a href="/" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
+           <a href="/details" class="product_name">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</a>
          </p>
        </div>
        <div class="col-md-6 col-12 row pr-0">

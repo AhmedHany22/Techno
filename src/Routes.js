@@ -5,11 +5,10 @@ const About = React.lazy(() => import("./components/About/About"));
 const Checkout = React.lazy(() => import("./components/Checkout/Checkout"));
 const Contact = React.lazy(() => import("./components/Contact/Contact"));
 const Home = React.lazy(() => import("./components/Home/Home"));
-const ShoppingCart = React.lazy(() =>
-  import("./components/ShoppingCart/ShoppingCart")
-);
+const ShoppingCart = React.lazy(() =>import("./components/ShoppingCart/ShoppingCart"));
 const SignUp = React.lazy(() => import("./components/SignUp/SignUp"));
 const SignIn = React.lazy(() => import("./components/SignIn/SignIn"));
+const ProductDetail = React.lazy(() => import("./components/ProductDetail/ProductDetail"));
 
 const Routes = () => {
   return (
@@ -22,6 +21,9 @@ const Routes = () => {
         <Route path="/signup" exact component={SignUp} />
         <Route path="/checkout" exact component={Checkout} />
         <Route path="/shoppingCart" exact component={ShoppingCart} />
+        <Route path="/details" exact component={ProductDetail} />
+
+
       </Switch>
     </Suspense>
   );
