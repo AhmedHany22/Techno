@@ -1,6 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import './productItem.css'
-import productimg from '../../../assets/images/1.jpg'
+import productimg from '../../../assets/10.jpg'
 
 
 export default function ProductItem(props){
@@ -20,14 +20,14 @@ export default function ProductItem(props){
                 <div class="mx-3">
                 <p class="pt-1 h4 fcolor">camera</p>
                 <span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
+                    <span class="fas fa-star checked"></span>
+                    <span class="fas fa-star checked"></span>
+                    <span class="fas fa-star checked"></span>
+                    <span class="fas fa-star checked"></span>
+                    <span class="fas fa-star"></span>
                 </span>
-                <a class="fa fa-edit float-right text-decoration-none m-0 text-secondary"></a>
-                <a class="fa fa-eye  float-right text-decoration-none m-0 mr-2 text-secondary"></a>
+                <a class="fas fa-edit float-right text-decoration-none m-0 text-secondary"></a>
+                <a class="fas fa-eye  float-right text-decoration-none m-0 mr-2 text-secondary"></a>
                 <hr style={{width:'95%'}} class="my-2"/>
                 <div class="p-2 pb-3">
                     <span>$2000</span>

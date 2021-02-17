@@ -5,19 +5,19 @@ export default function ProductList(){
 
     const products=[
 
-        {id:1,data:[{name:'camera',description:"this is camera"}],price:2000,discount:200,categoryId:{id:1},imagesUrls:['../../../assets/images/1.jpg']},
-        {id:2,data:[{name:'phone',description:"this is phone"}],price:1000,discount:100,categoryId:{id:2},imagesUrls:['../../../assets/images/2.jpg']},
-        {id:3,data:[{name:'labtop',description:"this is labtop"}],price:800,discount:50,categoryId:{id:3},imagesUrls:['../../../assets/images/3.jpg']},
-        {id:4,data:[{name:'camera',description:"this is camera"}],price:5000,discount:300,categoryId:{id:4},imagesUrls:['../../../assets/images/4.jpg']},
-        {id:5,data:[{name:'labtop',description:"this is labtop"}],price:7000,discount:500,categoryId:{id:5},imagesUrls:['../../../assets/images/5.jpg']},
-        {id:6,data:[{name:'phone',description:"this is camera"}],price:500,discount:20,categoryId:{id:6},imagesUrls:['../../../assets/images/6.jpg']},
-        {id:7,data:[{name:'mouse',description:"this is mouse"}],price:9000,discount:1000,categoryId:{id:1},imagesUrls:['../../../assets/images/7.jpg']},
-        {id:8,data:[{name:'keyboard',description:"this is keyboard"}],price:7000,discount:1000,categoryId:{id:2},imagesUrls:['../../../assets/images/8.jpg']},
-        {id:9,data:[{name:'watch',description:"this is watch"}],price:600,discount:50,categoryId:{id:3},imagesUrls:['../../../assets/images/9.jpg']},
-        {id:10,data:[{name:'iphone',description:"this is iphone"}],price:1000,discount:200,categoryId:{id:4},imagesUrls:['../../../assets/images/4.jpg']},
-        {id:11,data:[{name:'dell',description:"this is labtop"}],price:200,discount:0,categoryId:{id:5},imagesUrls:['../../../assets/images/3.jpg']},
-        {id:12,data:[{name:'tablet',description:"this is tablet"}],price:900,discount:50,categoryId:{id:6},imagesUrls:['../../../assets/images/2.jpg']},
-        {id:13,data:[{name:'screen',description:"this is screen"}],price:2000,discount:300,categoryId:{id:1},imagesUrls:['../../../assets/images/1.jpg']}
+        {id:1,data:[{name:'camera',description:"this is camera"}],price:2000,discount:200,categoryId:{id:1},imagesUrls:['../../../assets/10.jpg']},
+        {id:2,data:[{name:'phone',description:"this is phone"}],price:1000,discount:100,categoryId:{id:2},imagesUrls:['../../../assets/2.jpg']},
+        {id:3,data:[{name:'labtop',description:"this is labtop"}],price:800,discount:50,categoryId:{id:3},imagesUrls:['../../../assets/3.jpg']},
+        {id:4,data:[{name:'camera',description:"this is camera"}],price:5000,discount:300,categoryId:{id:4},imagesUrls:['../../../assets/4.jpg']},
+        {id:5,data:[{name:'labtop',description:"this is labtop"}],price:7000,discount:500,categoryId:{id:5},imagesUrls:['../../../assets/5.jpg']},
+        {id:6,data:[{name:'phone',description:"this is camera"}],price:500,discount:20,categoryId:{id:6},imagesUrls:['../../../assets/6.jpg']},
+        {id:7,data:[{name:'mouse',description:"this is mouse"}],price:9000,discount:1000,categoryId:{id:1},imagesUrls:['../../../assets/7.jpg']},
+        {id:8,data:[{name:'keyboard',description:"this is keyboard"}],price:7000,discount:1000,categoryId:{id:2},imagesUrls:['../../../assets/8.jpg']},
+        {id:9,data:[{name:'watch',description:"this is watch"}],price:600,discount:50,categoryId:{id:3},imagesUrls:['../../../assets/9.jpg']},
+        {id:10,data:[{name:'iphone',description:"this is iphone"}],price:1000,discount:200,categoryId:{id:4},imagesUrls:['../../../assets/4.jpg']},
+        {id:11,data:[{name:'dell',description:"this is labtop"}],price:200,discount:0,categoryId:{id:5},imagesUrls:['../../../assets/3.jpg']},
+        {id:12,data:[{name:'tablet',description:"this is tablet"}],price:900,discount:50,categoryId:{id:6},imagesUrls:['../../../assets/2.jpg']},
+        {id:13,data:[{name:'screen',description:"this is screen"}],price:2000,discount:300,categoryId:{id:1},imagesUrls:['../../../assets/10.jpg']}
 
     ];
 
