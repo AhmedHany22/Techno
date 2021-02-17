@@ -1,8 +1,10 @@
 import "./Home.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import ProductItem from "../products/product-item/productItem";
+import data from '../../data'
 
 const Home = () => {
+  const products=data.products
   return (
     <>
       <div class="section position-relative border-top-bottom-light myBackground">
@@ -199,18 +201,14 @@ const Home = () => {
         <div class="container">
           <div class="col lg-12">
             <div class="w-layout-grid c-grid1x5">
-              <div class="c-product-thumb">
-                <ProductItem/>
-              </div>
-              <div class="c-product-thumb">
-                <ProductItem/>
-              </div>
-              <div class="c-product-thumb">
-                <ProductItem/>
-              </div>
-              <div class="c-product-thumb">
-                <ProductItem/>
-              </div>
+              {products.slice(products.length-4,products.length).map((product,index)=>{
+                return(
+                  <div class="c-product-thumb" key={index}>
+                    <ProductItem product={product}/>
+                  </div>
+                )
+              })}
+              
             </div>
           </div>
         </div>
@@ -353,18 +351,14 @@ const Home = () => {
         <div class="container">
           <div class="col lg-12">
             <div class="w-layout-grid c-grid1x4">
-              <div class="c-product-thumb">
-                <ProductItem />
-              </div>
-              <div class="c-product-thumb">
-                <ProductItem />
-              </div>
-              <div class="c-product-thumb">
-                <ProductItem />
-              </div>
-              <div class="c-product-thumb">
-                <ProductItem />
-              </div>
+            {products.slice(1,5).map((product,index)=>{
+                return(
+                  <div class="c-product-thumb" key={index}>
+                    <ProductItem product={product}/>
+                  </div>
+                )
+              })}
+
             </div>
           </div>
         </div>
