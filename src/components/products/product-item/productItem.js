@@ -4,7 +4,8 @@ import productimg from '../../../assets/5.jpg'
 
 
 export default function ProductItem(props) {
-    const {product}=props
+    const {product}=props;
+    console.log(props);
     const discountPresent=Math.round((product.discount/product.price)*100)
     return (
     
