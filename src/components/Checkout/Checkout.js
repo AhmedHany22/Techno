@@ -10,7 +10,7 @@ const Checkout = () => {
     <div class="container col-lg-5 col-md-6 col-sm-8 col-9 py-4 bg-white text-center myBorder">
       <h1 class="mb-3 text-dark">Checkout</h1>
       <div class="msg">
-        Missed something ?<a href="../Aisha/shop.html" class="text-secondary">Continue shopping</a>
+        Missed something ?<a href="/" class="text-secondary">Continue shopping</a>
       </div>
     </div>
   </section>
@@ -134,8 +134,8 @@ const Checkout = () => {
               </div>
             </form>
             <hr/>
-            <a href="Shopping-Cart.html" class="btn rounded-0 btn-outline-dark">Back</a>
-            <a href="#" class="btn rounded-0 btn-outline-dark active">Next</a>
+            <a href="/shoppingCart" class="btn rounded-0 btn-outline-dark">Back</a>
+            <a href="#Shipping" class="btn rounded-0 btn-outline-dark active">Next</a>
             <br/>
             <br/>
           </div>
@@ -177,8 +177,8 @@ const Checkout = () => {
               </div>
             </div>
             <hr/>
-            <a href="Shopping-Cart.html" class="btn rounded-0 btn-outline-dark">Back</a>
-            <a href="#" class="btn rounded-0 btn-outline-dark active">Next</a>
+            <a href="#Billing" class="btn rounded-0 btn-outline-dark">Back</a>
+            <a href="#Payment" class="btn rounded-0 btn-outline-dark active">Next</a>
             <br/>
             <br/>
           </div>
@@ -243,10 +243,10 @@ const Checkout = () => {
                 <tbody>
                   <tr>
                     <td>
-                      <a href="../Eman/products.html"><img alt="Product Name" src={product}/></a>
+                      <a href="/"><img alt="Product Name" src={product}/></a>
                     </td>
                     <td>
-                      <a href="../Eman/products.html">Product Name</a>
+                      <a href="/">Product Name</a>
                     </td>
                     <td>Pro 1</td>
                     <td>
@@ -257,10 +257,10 @@ const Checkout = () => {
                   </tr>
                   <tr>
                     <td>
-                      <a href="../Eman/products.html"><img alt="Product Name" src={product}/></a>
+                      <a href="/"><img alt="Product Name" src={product}/></a>
                     </td>
                     <td>
-                      <a href="../Eman/products.html">Product Name</a>
+                      <a href="/">Product Name</a>
                     </td>
                     <td>Pro 2</td>
                     <td>
@@ -271,10 +271,10 @@ const Checkout = () => {
                   </tr>
                   <tr>
                     <td>
-                      <a href="../Eman/products.html"><img alt="Product Name" src={product}/></a>
+                      <a href="/"><img alt="Product Name" src={product}/></a>
                     </td>
                     <td>
-                      <a href="../Eman/products.html">Product Name</a>
+                      <a href="/">Product Name</a>
                     </td>
                     <td>Pro 3</td>
                     <td>
@@ -287,7 +287,7 @@ const Checkout = () => {
               </table>
             </div>
             <hr/>
-            <a href="Shopping-Cart.html" class="btn rounded-0 btn-outline-dark">Back</a>
+            <a href="Shopping-Cart.html" className="btn rounded-0 btn-outline-dark">Back</a>
             <a href="#" class="btn rounded-0 btn-outline-dark active">Next</a>
             <br/>
             <br/>
@@ -323,47 +323,7 @@ const Checkout = () => {
     </div>
   </section>
 
-  <div class="bg-white py-5">
-    <div class="container text-left">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="d-flex">
-            <div class="px-3">
-              <i class="fa fa-sync-alt text-primary"></i>
-            </div>
-            <div>
-              <p>Easy return</p>
-              <p class="text-muted">30 day return window without any question asked, just peace of mind.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="d-flex">
-            <div class="px-3">
-              <i class="fa fa-globe-africa text-primary"></i>
-            </div>
-            <div>
-              <p>Global shipping</p>
-              <p class="text-muted">We accept order around the globe and deliver to 120 countries.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="d-flex">
-            <div class="px-3">
-              <i class="fa fa-credit-card text-primary"></i>
-            </div>
-            <div>
-              <p>Secure payment</p>
-              <p class="text-muted">Encryption of standard SSL with 128-bit symmetric key</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
     </>
     )
   }
   export default Checkout;
-

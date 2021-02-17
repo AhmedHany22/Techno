@@ -1,10 +1,10 @@
-y.bodyLogin {
-   
+
+.bodyLogin {
     font-family: Metropolis, sans-serif;
     color: #556575;
     font-size: 17px;
     line-height: 1.5;
-    padding:7% 0% 5%;
+    padding:7% 0% 15%;
     background-image: url(../../assets/background.png);
   }
   .bodyLogin .row {
@@ -47,4 +47,3 @@ y.bodyLogin {
   .bodyLogin .row .login .btn {
     background-color: #2B65EC;
   }
-  
