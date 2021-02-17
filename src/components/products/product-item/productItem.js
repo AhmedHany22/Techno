@@ -1,40 +1,39 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import './productItem.css'
-import productimg from '../../../assets/images/1.jpg'
+import productimg from '../../../assets/5.jpg'
 
 
-export default function ProductItem(props){
-    return(
-        <div class="col-lg-6 col-md-6 col-sm-6">
+export default function ProductItem(props) {
+    const {product}=props
+    const discountPresent=Math.round((product.discount/product.price)*100)
+    return (
+    
+        <div class="col-4 col-lg-4 col-md-6 col-sm-6">
             <div class="card">
-                <div class="co">
-                    <img class="card-img-top" src={productimg} alt="Card image" />
+                <img class="card-img-top" src={productimg} alt="Card image"/>
 
-                    <div class="card-img-overlay image1">
-                        <div class="present">10%</div>
-                        <button class="show vImage1">
-                            <a > Add To Cart</a>
-                        </button>
+                <div class="card-img-overlay image3">
+                    <div class="present">{discountPresent}%</div>
+                    <div class="show vImage3" data-toggle="modal" data-target="#myModal">
+                        <a class="fas fa-eye"> QUICK VIEW</a>
                     </div>
                 </div>
-                <div class="mx-3">
-                <p class="pt-1 h4 fcolor">camera</p>
-                <span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star checked"></span>
-                    <span class="fa fa-star"></span>
-                </span>
-                <a class="fa fa-edit float-right text-decoration-none m-0 text-secondary"></a>
-                <a class="fa fa-eye  float-right text-decoration-none m-0 mr-2 text-secondary"></a>
-                <hr style={{width:'95%'}} class="my-2"/>
-                <div class="p-2 pb-3">
-                    <span>$2000</span>
-                    <span class="spa text-muted float-right">$100</span>
-                </div>
+
+                <div class="card-body">
+                    <a class="card-text">{product.data[0].name.toUpperCase()}</a>, <a href="">Cat</a>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+
+                    </div>
+                    <hr />
+                    <p>${product.price-product.discount} <span>${product.price}</span></p>
                 </div>
             </div>
         </div>
+
     )
 }

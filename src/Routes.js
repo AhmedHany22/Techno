@@ -7,6 +7,7 @@ const SignUp = React.lazy(() => import("./components/SignUp/SignUp"));
 const SignIn = React.lazy(() => import("./components/SignIn/SignIn"));
 const About = React.lazy(() => import("./components/About/About"));
 const ShoppingCart = React.lazy(() => import("./components/ShoppingCart/ShoppingCart"));
+const ProductList = React.lazy(() => import("./components/products/product-list/productList"));
 
 const Routes = () => {
     return (
@@ -18,6 +19,7 @@ const Routes = () => {
                 <Route path="/signup" exact component={SignUp} />
                 <Route path="/checkout" exact component={Checkout} />
                 <Route path="/shoppingCart" exact component={ShoppingCart} />
+                <Route path="/shop" exact component={ProductList} />
             </Switch>
         </Suspense>
     )
