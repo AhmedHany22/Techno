@@ -4,7 +4,7 @@ import ProductItem from "../products/product-item/productItem";
 import data from '../../data'
 
 const Home = () => {
-  const products=data.products
+  const products = data.products;
   return (
     <>
       <div class="section position-relative border-top-bottom-light myBackground">
@@ -12,14 +12,10 @@ const Home = () => {
         <div class="container position-relative">
           <div class="col lg-12">
             <div class="w-layout-grid c-grid1x2">
-
               <a id="w-node-65e3e86b6009-47e5635f" href="#" class="link-block w-inline-block">
-                <div class="c-gridgallery1__content style2">
-
-                </div>
-                <div class="c-gridgallery1__image shit"></div>
+                <div class="c-gridgallery1__content style2"></div>
+                <div class="c-gridgallery1__image adjus"></div>
               </a>
-
               <a data-w-id="0a231ed8-5fe2-b26e-23bc-3273827aff7e" href="#" class="link-block w-inline-block">
                 <div class="c-gridgallery1__content style2">
                   <div class="text-medium is-heading-color weight-is-medium">
@@ -34,7 +30,7 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
-                <div class="c-gridgallery1__image shit"></div>
+                <div class="c-gridgallery1__image adjus"></div>
               </a>
               <a
                 data-w-id="b8cbde19-d8ab-99ce-dfb3-64b94bb6dc16"
@@ -201,14 +197,14 @@ const Home = () => {
         <div class="container">
           <div class="col lg-12">
             <div class="w-layout-grid c-grid1x5">
-              {products.slice(products.length-4,products.length).map((product,index)=>{
-                return(
+              {products.slice(products.length - 4, products.length).map((product, index) => {
+                return (
                   <div class="c-product-thumb" key={index}>
-                    <ProductItem product={product}/>
+                    <ProductItem product={product} />
                   </div>
                 )
               })}
-              
+
             </div>
           </div>
         </div>
@@ -351,14 +347,13 @@ const Home = () => {
         <div class="container">
           <div class="col lg-12">
             <div class="w-layout-grid c-grid1x4">
-            {products.slice(1,5).map((product,index)=>{
-                return(
+              {products.slice(1, 5).map((product, index) => {
+                return (
                   <div class="c-product-thumb" key={index}>
-                    <ProductItem product={product}/>
+                    <ProductItem product={product} />
                   </div>
                 )
               })}
-
             </div>
           </div>
         </div>
