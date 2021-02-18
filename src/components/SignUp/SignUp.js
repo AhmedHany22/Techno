@@ -1,14 +1,11 @@
-
 import { useState } from "react";
-
 import "./SignUp.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 const SignUp = () => {
-
   let re = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
   const [registerForm, setRegisterForm] = useState({ email: "", password: "" });
-  const [registerErrors, setRegisterErrors] = useState({emailErrors: null,passwordErrors: null });
+  const [registerErrors, setRegisterErrors] = useState({emailErrors: null,passwordErrors: null});
   const handleFormChange = (e) => {
     if (e.target.name === "email") {
       setRegisterForm({
@@ -17,8 +14,9 @@ const SignUp = () => {
       });
       setRegisterErrors({
         ...registerErrors,
-        emailErrors: e.target.value.length === 0 ? "this field is mandatory" : !re.test(e.target.value)
-        ? "You have entered an invalid email address!" : null,
+        emailErrors:
+          e.target.value.length === 0? "this field is mandatory": !re.test(e.target.value)
+            ? "You have entered an invalid email address!": null,
       });
     } else {
       setRegisterForm({
@@ -27,8 +25,9 @@ const SignUp = () => {
       });
       setRegisterErrors({
         ...registerErrors,
-        passwordErrors: e.target.value.length === 0 ? "this field is mandatory" : e.target.value.length < 8
-        ? "password must be greater than 8 " : null,
+        passwordErrors:
+          e.target.value.length === 0? "this field is mandatory": e.target.value.length < 8
+            ? "password must be greater than 8 ": null,
       });
     }
   };
@@ -51,78 +50,45 @@ const SignUp = () => {
             <div class="form-group">
               <div class="row">
                 <div class="col">
-                  <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"/>
+                  <input type="text"class="form-control"name="first_name"placeholder="First Name"required="required"/>
                 </div>
                 <div class="col">
-                  <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"/>
+                  <input type="text"class="form-control"name="last_name"placeholder="Last Name"required="required"/>
                 </div>
               </div>
             </div>
             <div class="form-group">
-              <input
-                type="email"
-                class="form-control"
-                name="email"
-                placeholder="Email"
-                required="required"
-                className={`form-control mt-2
-					${registerErrors.emailErrors ? "border-danger" : ""}`}
-                value={registerForm.email}
-                onChange={handleFormChange}
-              />
-              <small className="text-danger mt-2">
-                {registerErrors.emailErrors}
-              </small>
+              <input type="email"class="form-control"name="email"placeholder="Email"required="required"
+                className={`form-control mt-2 ${registerErrors.emailErrors ? "border-danger" : ""}`}
+                value={registerForm.email}onChange={handleFormChange}/>
+              <small className="text-danger mt-2">{registerErrors.emailErrors}</small>
               <br></br>
             </div>
             <div class="form-group">
-              <input
-                type="password"
-                class="form-control"
-                name="password"
-                placeholder="Password"
-                required="required"
+              <input type="password"class="form-control"name="password"placeholder="Password"required="required"
                 className={`form-control mt-2 ${
-                  registerErrors.passwordErrors ? "border-danger" : ""
-                }`}
+                  registerErrors.passwordErrors ? "border-danger" : ""}`}
                 value={registerForm.password}
                 onChange={handleFormChange}
               />
-              <small className="text-danger mt-2">
-                {registerErrors.passwordErrors}
-              </small>
+              <small className="text-danger mt-2">{registerErrors.passwordErrors}</small>
               <br></br>
             </div>
             <div class="form-group">
-              <input
-                type="password"
-                class="form-control"
-                name="confirm_password"
-                placeholder="Confirm Password"
-                required="required"
-              />
+              <input type="password"class="form-control"name="confirm_password"placeholder="Confirm Password"required="required"/>
             </div>
             <div class="form-group">
               <label class="form-check-label">
-                <input type="checkbox" required="required" className="mr-2" />I
-                accept the <a href="#">Terms of Use</a> &amp;
+                <input type="checkbox" required="required" className="mr-2" />
+                I accept the <a href="#">Terms of Use</a> &amp;
                 <a href="#">Privacy Policy</a>
               </label>
             </div>
             <div class="form-group">
-              <button
-                type="submit"
-                class="btn btn-primary btn-lg"
-                onClick={handleSubmit}
-              >
-                Sign Up
-              </button>
+              <button type="submit"class="btn btn-primary btn-lg"onClick={handleSubmit}>Sign Up</button>
             </div>
-            <div class="hint-text">
-              Already have an account?
-              <a href="/signin" class="text-decoration-none text-primary">
-                Login here
-              </a>
+            <div class="hint-text">Already have an account?
+              <a href="/signin" class="text-decoration-none text-primary">Login here</a>
             </div>
           </form>
         </div>
