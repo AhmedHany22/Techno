@@ -229,12 +229,6 @@
     flex-basis: auto;
   }
 
-  .col.no-margin-bottom.lg-4.brand-column {
-    margin-bottom: 24px;
-    order: -1;
-    flex-basis: auto;
-  }
-
   .col.no-margin-bottom.lg-2.md-order-first.md-basis-auto {
     flex-basis: auto;
   }
@@ -312,29 +306,8 @@
     flex-direction: column;
   }
 
-  .button-primary.animated.is-small.alignself-center.is-dark.md-margin-top-small {
-    margin-top: 16px;
-  }
-
-  .nav-menu {
-    background-color: #1d2b36;
-    text-align: left;
-  }
-
   .flexh-align-center.flexh-justify-center.margin-bottom-double.md-wrap {
     flex-wrap: wrap;
-  }
-
-  .brand {
-    justify-content: flex-start;
-  }
-
-  .brand.margin-left-right-24px {
-    margin-left: 0px;
-  }
-
-  .no-padding-left.nav-link {
-    padding-left: 20px;
   }
 
   .fa.is-64px {
@@ -356,32 +329,6 @@
   .flexh-justify-end.md-flexh-justify-start {
     justify-content: flex-start;
   }
-
-  .nav-link {
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-
-  .nav-link.w--current {
-    border-bottom-style: none;
-  }
-
-  .nav-link.on-dark.flex-horizontal {
-    display: flex;
-  }
-
-  .nav-link.lg-no-margin-right {
-    margin-right: 24px;
-  }
-
-  .nav-link.lg-no-margin-left {
-    margin-left: 24px;
-  }
-
-  .footer-nav-link.text-align-right.md-text-align-left {
-    text-align: left;
-  }
-
   .text-align-right.md-text-align-left {
     text-align: left;
   }
@@ -398,15 +345,6 @@
     max-width: 200px;
   }
 
-  .menu-button.w--open {
-    background-color: #1d2b36;
-  }
-
-  .nav-dropdown {
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-
   .dropdown-link {
     white-space: pre-wrap;
   }
@@ -419,10 +357,6 @@
     display: block;
   }
 
-  .offcanvas-menu-list {
-    z-index: 9999;
-  }
-
   .md-order-last {
     order: 1;
   }
@@ -431,27 +365,9 @@
     max-width: 200px;
   }
 
-  .c-team1__info {
-    justify-content: flex-start;
-    flex-basis: 120px;
-  }
-
-  .c-team1__name {
-    position: static;
-  }
-
-  .c-team1__social {
-    justify-content: flex-start;
-  }
-
   .shift-down-double {
     position: static;
     margin-top: 0px;
-  }
-
-  .c-team3__image {
-    position: static;
-    transform: none;
   }
 
   .divider-top__triangle {
@@ -460,15 +376,6 @@
 
   .divider-bottom__triangle {
     display: none;
-  }
-
-  .c-team4 {
-    padding-top: 80px;
-    padding-bottom: 48px;
-  }
-
-  .c-team4.bg-accent.is-first {
-    padding-top: 80px;
   }
 
   .quote.style2.c-testimonial3__quote {
@@ -557,33 +464,6 @@
     max-width: 100%;
   }
 
-  .c-carousel2_wrapper.is-style2 {
-    width: 100%;
-    max-width: none;
-  }
-
-  .c-carousel2__content {
-    margin-right: 0px;
-    margin-left: 0px;
-  }
-
-  .c-carousel2_slide {
-    width: 100%;
-  }
-
-  .c-carousel2_slide.is-style2 {
-    width: 100%;
-  }
-
-  .c-carousel2_slide.is-last-slide {
-    width: 100%;
-  }
-
-  .c-carousel2_slide-inner.is-last-slide {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
   .display-only-lg {
     display: none;
   }
@@ -598,11 +478,6 @@
 
   .c-tabslider1__tab-link.w--current {
     box-shadow: inset 0 -2px 0 0 #866adb;
-  }
-
-  .c-tabslider1__tab-menu {
-    flex-direction: row;
-    flex-wrap: wrap;
   }
 
   .block-decoration {
@@ -623,11 +498,6 @@
 
   .rich-text p {
     margin-bottom: 16px;
-  }
-
-  .rich-text blockquote {
-    margin-top: 32px;
-    margin-bottom: 32px;
   }
 
   .no-margin-bottom-lg {
@@ -742,10 +612,6 @@
     font-size: 9px;
   }
 
-  .iconfont.is-offcanvas-close-button {
-    font-size: 26px;
-  }
-
   .c-grid3x2 {
     grid-column-gap: 48px;
     grid-row-gap: 48px;
@@ -771,11 +637,6 @@
 
   .lg-text-align-right {
     text-align: left;
-  }
-
-  .c-tab2__menu {
-    justify-content: flex-start;
-    flex-wrap: wrap;
   }
 
   .c-tab2__link {
@@ -826,76 +687,6 @@
     background-repeat: repeat, no-repeat;
   }
 
-  .navigation-menu {
-    flex-direction: column;
-  }
-
-  .navigation-and-offcanvas {
-    position: absolute;
-    left: auto;
-    top: 0px;
-    right: 0%;
-    bottom: auto;
-    z-index: 9999;
-    display: none;
-    overflow: scroll;
-    height: 100vh;
-    min-width: 250px;
-    padding-top: 56px;
-    flex-direction: column;
-    align-items: stretch;
-    background-color: #fff;
-  }
-
-  .navigation-section {
-    position: static;
-    z-index: 9999;
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
-
-  .navigation-section.position-absolute {
-    position: absolute;
-  }
-
-  .burger-button {
-    display: block;
-    color: #1d2b36;
-    font-size: 15px;
-  }
-
-  .mobile-navigation-bar {
-    display: flex;
-    margin-right: 24px;
-    margin-left: 24px;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .navigation-overlay {
-    position: absolute;
-    left: 0%;
-    top: 0px;
-    right: 0%;
-    bottom: 0%;
-    z-index: 9999;
-    display: none;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.57);
-  }
-
-  .c-nav__close-button {
-    position: absolute;
-    left: auto;
-    top: 47px;
-    right: 18px;
-    bottom: auto;
-    display: block;
-    transform: rotate(45deg);
-    color: #556575;
-  }
-
   .hero-image-2 {
     position: static;
     width: 100%;
@@ -904,11 +695,6 @@
   .c-grid8x1 {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto auto;
-  }
-
-  .nav-link-block {
-    margin-right: 0px;
-    margin-left: 0px;
   }
 
   .container-2 {
@@ -1001,27 +787,8 @@
     width: 200px;
   }
 
-  .c-cart__dropdown {
-    left: auto;
-    top: 30px;
-    right: -130px;
-    bottom: auto;
-    z-index: 999;
-    display: none;
-    width: 253px;
-  }
-
-  .c-cart__buttons {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
   .c-slider__slide {
     width: 100%;
-  }
-
-  .slide-nav {
-    bottom: -51px;
   }
 
   .c-shop-order {
@@ -1256,15 +1023,4 @@
     left: auto;
     right: auto;
   }
-}
-/* --------------------Part4-------------------- */
-@media screen and (max-width: 991px) {
-  .w-nav[data-collapse="medium"] .w-dropdown,
-  .w-nav[data-collapse="medium"] .w-dropdown-toggle {display: block;}
-  .w-nav[data-collapse="medium"] .w-dropdown-list {position: static;}
-}
-/* --------------------Part5-------------------- */
-@media screen and (max-width: 991px) {
-  .w-nav[data-collapse="medium"] .w-nav-menu {display: none;}
-  .w-nav[data-collapse="medium"] .w-nav-button {display: block;}
 }
