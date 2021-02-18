@@ -21,7 +21,7 @@ export default function ProductItem(props) {
                 <div class="card-img-overlay image3">
                     <div class="present">{product?discountPresent:10}%</div>
                     <div class="show vImage3" data-toggle="modal" data-target="#myModal">
-                        <a class="fas"> QUICK VIEW</a>
+                        <a class="fas fa-eye"> QUICK VIEW</a>
                     </div>
                 </div>
 
@@ -33,7 +33,7 @@ export default function ProductItem(props) {
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star"></i>
                         <i class="fas fa-star-half-alt"></i>
-                        <a class="fa fa-eye  float-right text-decoration-none m-0 mr-2 text-secondary"></a>
+                        <a class="fa fa-eye float-right text-decoration-none m-0 mr-2 text-secondary"></a>
                         
                     </div>
                     <hr />
