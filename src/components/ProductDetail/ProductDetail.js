@@ -40,8 +40,8 @@ const ProductDetail = () => {
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="home">
               <div class="head">
-                <a href="../Nancy/home.html">Home</a>/
-                <a href="../Aisha/shop.html">Sofa Labtops</a>/ Albert Armchair,Nubuck White
+                <a href="/">Home</a>/
+                <a href="/shop">Sofa Labtops</a>/ Albert Armchair,Nubuck White
               </div>
               <h1 class="details">Albert Armchair, Nubuck White</h1>
               <div class="view">
@@ -76,24 +76,24 @@ const ProductDetail = () => {
               </div>
               <div class="info">82934
                 <br /><br />
-                <a href="../Aisha/shop.html">Armhair</a>,{" "}
-                <a href="../Aisha/shop.html">Wooden Leg</a>,{" "}
-                <a href="../Aisha/shop.html">Satin</a>
+                <a href="/shop">Armhair</a>,{" "}
+                <a href="/shop">Wooden Leg</a>,{" "}
+                <a href="/shop">Satin</a>
                 <br /><br />
-                <a href="../Aisha/shop.html">Tosca</a>,{" "}
-                <a href="../Aisha/shop.html">Living Room</a>,{" "}
-                <a href="../Aisha/shop.html">Modern</a>
+                <a href="/shop">Tosca</a>,{" "}
+                <a href="/shop">Living Room</a>,{" "}
+                <a href="/shop">Modern</a>
               </div>
             </div>
             <hr />
             <div class="delivery">
               <a href="" class="fas fa-map-marker-alt">{" "}Store availability</a>
               <a href="" class="fas fa-sync-alt">{" "}Delivery and return</a>
-              <a href="contant.html" class="fas fa-comments">{" "}Ask a question</a>
+              <a href="/contact" class="fas fa-comments">{" "}Ask a question</a>
             </div>
             <hr />
             <div class="share">
-              <a href="../Ahmed/Shopping-Cart.html" class="far fa-heart">&nbsp; Add to wishlist</a>
+              <a href="/shoppingCart" class="far fa-heart">&nbsp; Add to wishlist</a>
               <div>
                 <p class="share">Share</p>
                 <a href="https://www.facebook.com/"class="fab fa-facebook-f"></a>
