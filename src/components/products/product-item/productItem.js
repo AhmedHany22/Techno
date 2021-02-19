@@ -6,7 +6,7 @@ import data from '../../../data';
 export default function ProductItem(props) {
   let discountPresent = 10;
   const { product }  = props;
-  const { category } = props;
+  const category = data.category;
   const cateName = category.find( ({ _id }) => _id == product.categoryId.id);
   if (product) { discountPresent = Math.round((product.discount / product.price) * 100); }
 
@@ -20,7 +20,7 @@ export default function ProductItem(props) {
         </div>
         <div className="card-body">
           <a className="card-text" href={`/details/${product._id}`}>{product ? product.data[0].name.toUpperCase() : "Name"}</a>
-          , <a href="/details/:id">{product ? cateName.name : "Cat"}</a>
+          , <a href="/shop">{product ? cateName.name : "Cat"}</a>
           <div>
             <Rating rating={product.rating} numReviews={product.numReviews}></Rating>
             <a className="fa fa-eye float-right text-secondary mr-2 mt-2"></a>

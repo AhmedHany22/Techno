@@ -96,10 +96,10 @@ const Footer = () => {
           <div className="col-md-3 footer-padding">
             <h6 className="mb-3 font-weight-bold pt-3">Get Our Store App</h6>
             <p>
-              <img src="./assets/google.png" className="logo" />
+              <img src="../assets/google.png" className="logo" />
             </p>
             <p>
-              <img src="./assets/apple.png" className="logo" />
+              <img src="../assets/apple.png" className="logo" />
             </p>
           </div>
         </div>

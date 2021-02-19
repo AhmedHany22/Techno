@@ -9,15 +9,14 @@ import Rating from '../Rating/Rating';
 const ProductDetail = (props) => {
   {/* --------------------The function of the Quantity-------------------- */}
   const [qty, setQty] = useState(1);
-  const increment =()=> {setQty(qty +1);};
-  const decrement =()=> {setQty(qty -1);};
+  const increment =()=> {setQty(qty +1)};
+  const decrement =()=> {if (qty > 1){setQty(qty -1)}};
   {/* ----------The import of the related products---------- */}
   const products = data.products;
   const productsCat = data.category;
   {/* ----------Default import of the Product---------- */}
   const item = products.find( ({ _id }) => _id == props.match.params.id );
   const category  = productsCat.find( ({ _id }) => _id == item.categoryId.id);
-
 
   if (!item) {
     return (
@@ -60,8 +59,8 @@ const ProductDetail = (props) => {
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="home">
               <div class="head">
-                <a href="../Nancy/home.html">Home </a> /
-                <a href="../Aisha/shop.html"> {category.name}</a> / {item.data[0].name}
+                <a href="/">Home </a> /
+                <a href="/shop"> {category.name}</a> / {item.data[0].name}
               </div>
               <h1 class="details">{item.data[0].name}</h1>
               <div class="view">
@@ -91,22 +90,22 @@ const ProductDetail = (props) => {
               </div>
               <div class="info">82934
                 <br /><br />
-                <a href="../Aisha/shop.html">{category.name}</a>
+                <a href="/shop">{category.name}</a>
                 <br /><br />
-                <a href="../Aisha/shop.html">Tosca</a>,{" "}
-                <a href="../Aisha/shop.html">Living Room</a>,{" "}
-                <a href="../Aisha/shop.html">Modern</a>
+                <a href="/shop">Tosca</a>,{" "}
+                <a href="/shop">Living Room</a>,{" "}
+                <a href="/shop">Modern</a>
               </div>
             </div>
             <hr />
             <div class="delivery">
               <a href="" class="fas fa-map-marker-alt">{" "}Store availability</a>
               <a href="" class="fas fa-sync-alt">{" "}Delivery and return</a>
-              <a href="contant.html" class="fas fa-comments">{" "}Ask a question</a>
+              <a href="/contant" class="fas fa-comments">{" "}Ask a question</a>
             </div>
             <hr />
             <div class="share">
-              <a href="../Ahmed/Shopping-Cart.html" class="far fa-heart">&nbsp; Add to wishlist</a>
+              <a href="/shoppingCart" class="far fa-heart">&nbsp; Add to wishlist</a>
               <div>
                 <p class="share">Share</p>
                 <a href="https://www.facebook.com/"class="fab fa-facebook-f"></a>
@@ -128,12 +127,8 @@ const ProductDetail = (props) => {
             </div>
             <div class="tab-content">
               <div id="home" class="tab-pane active">
-                <p>
-                  {item.data[0].description}
-                </p>
-                <p>
-                  {item.data[0].description}
-                </p>
+                <p>{item.data[0].description}</p>
+                <p>{item.data[0].description}</p>
               </div>
               <div id="menu1" class="tab-pane fade">
                 <div class="addInfo">

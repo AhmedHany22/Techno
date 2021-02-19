@@ -47,7 +47,8 @@ export default function ProductList() {
               </div>
               <div className="row">
                 {getSliceArrayOfProduct().map((product, index) => {
-                  return (<ProductItem className="col-4 col-lg-4 col-sm-12 col-md-4 " key={product._id} product={product} category={data.category}/>);
+                  return (<ProductItem className="col-4 col-lg-4 col-sm-12 col-md-4"
+                  key={product._id} product={product}/>);
                 })}
               </div>
               <div className="row">
