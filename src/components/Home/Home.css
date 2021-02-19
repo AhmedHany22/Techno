@@ -2735,7 +2735,7 @@ img {
   background-position: 50% 10%;
   background-size: cover;
   background-repeat: no-repeat;
-  background-image: url(../../assets/Banner/image-25.jpg);
+  background-image: url(../../assets/18-unsplash.png);
 }
 
 .c-gridgallery1__image.img2 {
@@ -3106,31 +3106,6 @@ img {
 
 .c-heroslider {
   height: auto;
-}
-
-.c-heroslider__content {
-  display: flex;
-  height: 100%;
-  padding-top: 32px;
-  flex-direction: column;
-  justify-content: flex-start;
-  background-position: 50% 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url(http://detheme.com/templates/rylee/images/722.jpg);
-}
-
-.c-heroslider__content.img2 {
-  background-image: url(http://detheme.com/templates/rylee/images/781.jpg);
-  background-position: 50% 30%;
-  background-size: cover;
-}
-
-.c-heroslider__content.img3 {
-  justify-content: flex-start;
-  background-position: 50% 50%;
-  background-size: cover;
-  background-image: url(http://detheme.com/templates/rylee/images/162.jpg);
 }
 
 .c-heroslider__line {

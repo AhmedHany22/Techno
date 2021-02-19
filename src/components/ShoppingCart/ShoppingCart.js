@@ -1,6 +1,5 @@
 import "./ShoppingCart.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import product from "../../assets/Product_1.jpg";
 
 const ShoppingCart = () => {
   return (
@@ -16,7 +15,7 @@ const ShoppingCart = () => {
       <div class="container p-0">
         <div class="row mx-1 my-4 bg-white Cart_Row">
           <div class="col-md-2 col-6 pl-1 border-right">
-            <img src={product} class="mt-2 cart_img" />
+            <img src="./assets/Product_1.jpg" class="mt-2 cart_img" />
           </div>
           <div class="mt-2 col-md-4 col-6 text-left">
             <p><a href="#" class="seller_name"> Suspensions</a></p>
@@ -51,7 +50,7 @@ const ShoppingCart = () => {
       </div>
       <div class="container p-0">
         <div class="row mx-1 my-4 bg-white Cart_Row">
-          <div class="col-md-2 col-6 pl-1 border-right"><img src={product}class="mt-2 cart_img"/></div>
+          <div class="col-md-2 col-6 pl-1 border-right"><img src="./assets/Product_1.jpg"class="mt-2 cart_img"/></div>
           <div class="mt-2 col-md-4 col-6 text-left">
             <p><a href="#" class="seller_name">Suspensions</a></p>
             <p>
@@ -90,7 +89,7 @@ const ShoppingCart = () => {
       <div class="container p-0">
         <div class="row mx-1 my-4 bg-white Cart_Row">
           <div class="col-md-2 col-6 pl-1 border-right">
-            <img src={product} class="mt-2 cart_img" />
+            <img src="./assets/Product_1.jpg" class="mt-2 cart_img" />
           </div>
           <div class="mt-2 col-md-4 col-6 text-left">
             <p><a href="#" class="seller_name">Suspensions</a></p>
@@ -130,7 +129,7 @@ const ShoppingCart = () => {
       <div class="container p-0">
         <div class="row mx-1 my-4 bg-white Cart_Row">
           <div class="col-md-2 col-6 pl-1 border-right">
-            <img src={product} class="mt-2 cart_img" />
+            <img src="./assets/Product_1.jpg" class="mt-2 cart_img" />
           </div>
           <div class="mt-2 col-md-4 col-6 text-left">
             <p><a href="#" class="seller_name">Suspensions</a></p>
