@@ -1,32 +1,25 @@
 import { useEffect, useState } from "react";
 import ProductItem from "../product-item/productItem";
-import axios from "axios";
+import {useSelector,useDispatch} from 'react-redux'
+import { listProducts } from "../../../store/actions/ProductActions";
+import LoadingBox from "../../LoadingBox";
+import MessageBox from "../../MessageBox";
 
 export default function ProductList(){
-    const [products,setProducts]=useState([]);
-    const [category,setCategory]=useState([]);
-    const [loading,setloading]=useState(false);
-    const [error,setError]=useState(false);
-    const fetchData= async ()=>{
-        try{
 
-            setloading(true)
-            const allProducts= await axios.get('/api/products');
-            const allCategory=await axios.get('/api/category');
-            setProducts(allProducts.data);
-            setCategory(allCategory.data)
-            setloading(false)
-        } catch(err){
-            setError(err.message)
-            setloading(false)
-        }
-    }
+    const [category,setCategory]=useState([]);
+    
+    const dispatch=useDispatch();
+    const productList=useSelector((state)=> state.productList)
+    
+    
+
+    console.log(productList.products);
 
     useEffect(()=>{
-        fetchData()
+        dispatch(listProducts());
     },[]);
     
-    console.log(products);
 
     let padgeNumpers=[];
     let pageSize=9;
@@ -41,9 +34,9 @@ export default function ProductList(){
       }
      
       const getSliceArrayOfProduct=()=>{
-        calculateNumberOfPages(products.length)
+        calculateNumberOfPages(productList.products?.data?.length)
         const start=pageSize*currentPage;
-        return products.slice(start,start+pageSize);
+        return productList.products?.data?.slice?.(start,start+pageSize);
       }
 
       console.log(getSliceArrayOfProduct());
@@ -62,20 +55,12 @@ export default function ProductList(){
             <hr/>
             <div className="pt-3 pb-3">
                 <h6 className="pb-3">Product categories</h6>
-                {loading? (
-                    <div>
-                        <i className="fa fa-spinner fa-spin"></i>loading....
-                    </div>
-                )
-                :error?(
-                    <div className={`alert alert-${error|| 'info'} border border-danger`}>
-                        {error}
-                    </div>
-                )
+                {productList.loading? (<LoadingBox/>)
+                :productList.error?(<MessageBox error={productList.error}/>)
                 :(
                     category.map((cat,index)=>{
                         return(
-                            <h6 key={index}>{cat.name}</h6>
+                            <h6><a href key={index}>{cat.name}</a></h6>
                         )
                     })
                 )}
@@ -98,18 +83,18 @@ export default function ProductList(){
                 </div>
 
                 <div className="row">
-                {loading? (
+                {productList.loading? (
                     <div>
                         <i className="fa fa-spinner fa-spin"></i>loading....
                     </div>
                 )
-                :error?(
-                    <div className={`alert alert-${error|| 'info'} border border-danger`}>
-                        {error}
+                :productList.error?(
+                    <div className={`alert alert-${productList.error|| 'info'} border border-danger`}>
+                        {productList.error}
                     </div>
                 )
                 :(
-                    getSliceArrayOfProduct().map((product,index)=>{
+                    getSliceArrayOfProduct()?.map((product,index)=>{
                         console.log(product);
                         return(
                             <ProductItem className="col-4 col-lg-4 col-sm-12 col-md-4 " key={index} product={product}/>
