@@ -5,6 +5,7 @@ import data from "../../data";
 
 const Home = () => {
   const products = data.products;
+  const categories = data.category;
   return (
     <>
       <div class="section position-relative border-top-bottom-light myBackground">
@@ -136,7 +137,7 @@ const Home = () => {
               {products.slice(products.length - 4, products.length).map((product, index) => {
                   return (
                     <div class="c-product-thumb" key={index}>
-                      <ProductItem product={product} />
+                      <ProductItem product={product} category={categories} />
                     </div>
                   );
               })}
@@ -245,7 +246,7 @@ const Home = () => {
               {products.slice(1, 5).map((product, index) => {
                 return (
                   <div class="c-product-thumb" key={index}>
-                    <ProductItem product={product} />
+                    <ProductItem product={product} category={categories} />
                   </div>
                 );
               })}

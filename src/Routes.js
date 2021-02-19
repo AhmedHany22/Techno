@@ -23,10 +23,8 @@ const Routes = () => {
         <Route path="/signup" exact component={SignUp} />
         <Route path="/checkout" exact component={Checkout} />
         <Route path="/shoppingCart" exact component={ShoppingCart} />
-        <Route path="/details" exact component={ProductDetail} />
+        <Route path="/details/:id" exact component={ProductDetail} />
         <Route path="/shop" exact component={ProductList} />
-
-
       </Switch>
     </Suspense>
   );

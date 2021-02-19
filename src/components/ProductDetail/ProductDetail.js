@@ -1,11 +1,32 @@
 import "./ProductDetail.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import image from "../../assets/4.jpg";
 import ProductItem from "../products/product-item/productItem";
-import data from '../../data'
+import data from '../../data';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import Rating from '../Rating/Rating';
 
-const ProductDetail = () => {
+const ProductDetail = (props) => {
+  {/* --------------------The function of the Quantity-------------------- */}
+  const [qty, setQty] = useState(1);
+  const increment =()=> {setQty(qty +1);};
+  const decrement =()=> {setQty(qty -1);};
+  {/* ----------The import of the related products---------- */}
   const products = data.products;
+  const productsCat = data.category;
+  {/* ----------Default import of the Product---------- */}
+  const item = products.find( ({ _id }) => _id == props.match.params.id );
+  const category  = productsCat.find( ({ _id }) => _id == item.categoryId.id);
+
+
+  if (!item) {
+    return (
+      <div className="container my-5 py-5 text-center">
+        <h1> Product Not Found</h1>
+      </div>
+    )
+  }
+  {/* --------------------The default Return-------------------- */}
   return (
     <div class="section">
       <div class="mycontainer">
@@ -13,21 +34,20 @@ const ProductDetail = () => {
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div id="custCarousel" class="carousel slide" data-ride="carousel" data-interval="2000">
               <div class="carousel-inner">
-                <div class="carousel-item active">{" "}<img src={image} />{" "}
-                </div>
-                <div class="carousel-item">{" "}<img src={image} />{" "}</div>
-                <div class="carousel-item">{" "}<img src={image} />{" "}</div>
-                <div class="carousel-item">{" "}<img src={image} />{" "}</div>
-                <div class="carousel-item">{" "}<img src={image} />{" "}</div>
-                <div class="carousel-item">{" "}<img src={image} />{" "}</div>
+                <div class="carousel-item active">{" "}<img src={item.imagesUrls} />{" "}</div>
+                <div class="carousel-item">{" "}<img src={item.imagesUrls} />{" "}</div>
+                <div class="carousel-item">{" "}<img src={item.imagesUrls} />{" "}</div>
+                <div class="carousel-item">{" "}<img src={item.imagesUrls} />{" "}</div>
+                <div class="carousel-item">{" "}<img src={item.imagesUrls} />{" "}</div>
+                <div class="carousel-item">{" "}<img src={item.imagesUrls} />{" "}</div>
               </div>
               <ol class="carousel-indicators">
-                <li data-target="#custCarousel"data-slide-to="0"class="active"><img src={image} /></li>
-                <li data-target="#custCarousel" data-slide-to="1"><img src={image} /></li>
-                <li data-target="#custCarousel" data-slide-to="2"><img src={image} /></li>
-                <li data-target="#custCarousel" data-slide-to="3"><img src={image} /></li>
-                <li data-target="#custCarousel" data-slide-to="4"><img src={image} /></li>
-                <li data-target="#custCarousel" data-slide-to="5"><img src={image} /></li>
+                <li data-target="#custCarousel"data-slide-to="0"class="active"><img src={item.imagesUrls} /></li>
+                <li data-target="#custCarousel" data-slide-to="1"><img src={item.imagesUrls} /></li>
+                <li data-target="#custCarousel" data-slide-to="2"><img src={item.imagesUrls} /></li>
+                <li data-target="#custCarousel" data-slide-to="3"><img src={item.imagesUrls} /></li>
+                <li data-target="#custCarousel" data-slide-to="4"><img src={item.imagesUrls} /></li>
+                <li data-target="#custCarousel" data-slide-to="5"><img src={item.imagesUrls} /></li>
               </ol>
             </div>
             <a class="left carousel-control"href="#custCarousel"data-slide="prev">
@@ -40,19 +60,14 @@ const ProductDetail = () => {
           <div class="col-lg-6 col-md-12 col-sm-12">
             <div class="home">
               <div class="head">
-                <a href="../Nancy/home.html">Home</a>/
-                <a href="../Aisha/shop.html">Sofa Labtops</a>/ Albert Armchair,Nubuck White
+                <a href="../Nancy/home.html">Home </a> /
+                <a href="../Aisha/shop.html"> {category.name}</a> / {item.data[0].name}
               </div>
-              <h1 class="details">Albert Armchair, Nubuck White</h1>
+              <h1 class="details">{item.data[0].name}</h1>
               <div class="view">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star-half-alt"></i>
-                <a href="#">View Reviews</a>
+                <Rating rating={item.rating} numReviews={item.numReviews}></Rating>
               </div>
-              <h2 class="paragraph">$120</h2>
+              <h2 class="paragraph">${item.price}</h2>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 Suspendisse varius enim in eros elementum tristique. Duis
@@ -62,9 +77,9 @@ const ProductDetail = () => {
               </p>
             </div>
             <div id="addTo">
-              <a class="is-minus">-</a>
-              <input class="quantity-input" type="text" value="1" />
-              <a class="quantity-button is-plus">+</a>
+              <a class="is-minus" onClick={decrement}>-</a>
+              <input class="quantity-input" type="text" value={qty} />
+              <a class="quantity-button is-plus" onClick={increment}>+</a>
               <a class="btnCard"><div>ADD TO CARD</div></a>
             </div>
             <hr />
@@ -76,9 +91,7 @@ const ProductDetail = () => {
               </div>
               <div class="info">82934
                 <br /><br />
-                <a href="../Aisha/shop.html">Armhair</a>,{" "}
-                <a href="../Aisha/shop.html">Wooden Leg</a>,{" "}
-                <a href="../Aisha/shop.html">Satin</a>
+                <a href="../Aisha/shop.html">{category.name}</a>
                 <br /><br />
                 <a href="../Aisha/shop.html">Tosca</a>,{" "}
                 <a href="../Aisha/shop.html">Living Room</a>,{" "}
@@ -116,17 +129,10 @@ const ProductDetail = () => {
             <div class="tab-content">
               <div id="home" class="tab-pane active">
                 <p>
-                  Curabitur blandit tempus porttitor. Vivamus sagittis lacus vel
-                  augue laoreet rutrum faucibus dolor auctor. Integer posuere
-                  erat a ante venenatis dapibus posuere velit aliquet.
-                  Vestibulum id ligula porta felis euismod semper. Integer
-                  posuere erat a ante venenatis dapibus posuere velit aliquet.
+                  {item.data[0].description}
                 </p>
                 <p>
-                  Maecenas faucibus mollis interdum. Cras justo odio, dapibus ac
-                  facilisis in, egestas eget quam. Aenean eu leo quam.
-                  Pellentesque ornare sem lacinia quam venenatis vestibulum.
-                  Vestibulum id ligula porta felis euismod semper.
+                  {item.data[0].description}
                 </p>
               </div>
               <div id="menu1" class="tab-pane fade">
@@ -148,7 +154,7 @@ const ProductDetail = () => {
               <div id="menu2" class="tab-pane fade">
                 <div class="veiw1">
                   <div class="info">
-                    <img src={image} alt="" />
+                    <img src={item.imagesUrls} alt="" />
                     <div>
                       <h4>Walter Cook</h4>
                       <p>June 07, 2020</p>
@@ -173,7 +179,7 @@ const ProductDetail = () => {
                 </div>
                 <div class="veiw1">
                   <div class="info">
-                    <img src={image} alt="" />
+                    <img src={item.imagesUrls} alt="" />
                     <div>
                       <h4>Sacha Kariono</h4>
                       <p>June 27, 2020</p>
@@ -206,7 +212,7 @@ const ProductDetail = () => {
         <div class="row">
           {products.slice(products.length - 4, products.length).map((product, index) => {
             return (
-                <div class="c-product-thumb" key={index}>
+              <div class="c-product-thumb" key={product._id}>
                 <ProductItem product={product} />
               </div>
             )
@@ -223,12 +229,12 @@ const ProductDetail = () => {
                   <div class="col-6 col-sm-12 col-lg-6 justify-content-center"class="second">
                     <div id="myCarousel" class="carousel slide">
                       <div class="carousel-inner">
-                        <div class="carousel-item active">{" "}<img src={image} />{" "}</div>
-                        <div class="carousel-item">{" "}<img src={image} />{" "}</div>
-                        <div class="carousel-item">{" "}<img src={image} />{" "}</div>
-                        <div class="carousel-item">{" "}<img src={image} />{" "}</div>
-                        <div class="carousel-item">{" "}<img src={image} />{" "}</div>
-                        <div class="carousel-item">{" "}<img src={image} />{" "}</div>
+                        <div class="carousel-item active">{" "}<img src={item.imagesUrls} />{" "}</div>
+                        <div class="carousel-item">{" "}<img src={item.imagesUrls} />{" "}</div>
+                        <div class="carousel-item">{" "}<img src={item.imagesUrls} />{" "}</div>
+                        <div class="carousel-item">{" "}<img src={item.imagesUrls} />{" "}</div>
+                        <div class="carousel-item">{" "}<img src={item.imagesUrls} />{" "}</div>
+                        <div class="carousel-item">{" "}<img src={item.imagesUrls} />{" "}</div>
                       </div>
                       <ol class="carousel-indicators">
                         <li data-target="#myCarousel"data-slide-to="0"class="active"></li>
