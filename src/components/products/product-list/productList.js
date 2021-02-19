@@ -1,10 +1,32 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ProductItem from "../product-item/productItem";
-import data from '../../../data'
+import axios from "axios";
 
 export default function ProductList(){
+    const [products,setProducts]=useState([]);
+    const [category,setCategory]=useState([]);
+    const [loading,setloading]=useState(false);
+    const [error,setError]=useState(false);
+    const fetchData= async ()=>{
+        try{
 
-    console.log(data);
+            setloading(true)
+            const allProducts= await axios.get('/api/products');
+            const allCategory=await axios.get('/api/category');
+            setProducts(allProducts.data);
+            setCategory(allCategory.data)
+            setloading(false)
+        } catch(err){
+            setError(err.message)
+            setloading(false)
+        }
+    }
+
+    useEffect(()=>{
+        fetchData()
+    },[]);
+    
+    console.log(products);
 
     let padgeNumpers=[];
     let pageSize=9;
@@ -19,9 +41,9 @@ export default function ProductList(){
       }
      
       const getSliceArrayOfProduct=()=>{
-        calculateNumberOfPages(data.products.length)
+        calculateNumberOfPages(products.length)
         const start=pageSize*currentPage;
-        return data.products.slice(start,start+pageSize);
+        return products.slice(start,start+pageSize);
       }
 
       console.log(getSliceArrayOfProduct());
@@ -29,31 +51,44 @@ export default function ProductList(){
         <>
         <hr/>
 
-        <div class="container pt-5 pb-5">
-        <div class="row">
+        <div className="container pt-5 pb-5">
+        <div className="row">
 
-            <div class="col-md-3 pt-1">
-            <div class="pb-4">
-                <input type="search" class="se p-3" placeholder="search product" />
-                <i class="gh fas fa-search top-righ text-muted"></i>
+            <div className="col-md-3 pt-1">
+            <div className="pb-4">
+                <input type="search" className="se p-3" placeholder="search product" />
+                <i className="gh fas fa-search top-righ text-muted"></i>
             </div>
             <hr/>
-            <div class="pt-3 pb-3">
-                <h6 class="pb-3">Product categories</h6>
-                {data.category.map((cat,index)=>{
-                    return(
-                        <h6 key={index}>{cat.name}</h6>
-                    )
-                })}
+            <div className="pt-3 pb-3">
+                <h6 className="pb-3">Product categories</h6>
+                {loading? (
+                    <div>
+                        <i className="fa fa-spinner fa-spin"></i>loading....
+                    </div>
+                )
+                :error?(
+                    <div className={`alert alert-${error|| 'info'} border border-danger`}>
+                        {error}
+                    </div>
+                )
+                :(
+                    category.map((cat,index)=>{
+                        return(
+                            <h6 key={index}>{cat.name}</h6>
+                        )
+                    })
+                )}
+                
                 
             </div>
             </div>
 
-            <div class="col-md-9">
-            <div class="container">
-                <div class="row mb-3">
-                <div class="col-12 col-lg-5 pb-5">
-                    <select class="form-control" name="" id="">
+            <div className="col-md-9">
+            <div className="container">
+                <div className="row mb-3">
+                <div className="col-12 col-lg-5 pb-5">
+                    <select className="form-control" name="" id="">
                     <option value="1">Featured</option>
                     <option value="2" >Price low to high</option>
                     <option value="3">Price high to low</option>
@@ -62,36 +97,43 @@ export default function ProductList(){
                 </div>
                 </div>
 
-                <div class="row">
-                {getSliceArrayOfProduct().map((product,index)=>{
-                    console.log(product);
-                    return(
-                        <ProductItem class="col-4 col-lg-4 col-sm-12 col-md-4 " key={index} product={product}/>
-                    )
-                })}
+                <div className="row">
+                {loading? (
+                    <div>
+                        <i className="fa fa-spinner fa-spin"></i>loading....
+                    </div>
+                )
+                :error?(
+                    <div className={`alert alert-${error|| 'info'} border border-danger`}>
+                        {error}
+                    </div>
+                )
+                :(
+                    getSliceArrayOfProduct().map((product,index)=>{
+                        console.log(product);
+                        return(
+                            <ProductItem className="col-4 col-lg-4 col-sm-12 col-md-4 " key={index} product={product}/>
+                        )
+                    })
+                )}
                 
-
-
                 </div>
 
-                <div class="row">
-                <div class="pagination pt-5">
-                    <a>&laquo;</a>
+                <div className="row">
+                <div className="pagination pt-5">
+                    <a href>&laquo;</a>
                     {padgeNumpers.map((padgeNumper,index)=>{
                         return(
-                            <a key={index} class="paging__number" className={index===currentPage? 'active':''} onClick={()=>{setCurrentPage(index)}}>{padgeNumper} </a>
+                            <a href key={index} className="paging__number" classNameName={index===currentPage? 'active':''} onClick={()=>{setCurrentPage(index)}}>{padgeNumper} </a>
                         )
                     })}
-                    <a>&raquo;</a>
+                    <a href>&raquo;</a>
                 </div>         
 
                 </div>
                 
             </div>
             </div>
-
-            
-
         </div>
         </div>
 

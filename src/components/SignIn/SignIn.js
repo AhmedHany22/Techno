@@ -45,31 +45,31 @@ const SignIn = () => {
 
   return (
     <>
-      <div class="bodyLogin m-0">
-        <div class="row">
+      <div classNameName="bodyLogin m-0">
+        <div classNameName="row">
 
-          <div class="login bg-white ">
+          <div classNameName="login bg-white ">
             <h1>Login</h1>
             <form>
-              <div class="form-group">
+              <div classNameName="form-group">
                 <label for="email">Email</label>
-                <input type="email" name="email" class="form-control" placeholder="email id" id="email" className={`form-control mt-2 ${registerErrors.emailErrors ? "border-danger" : ""}`}
+                <input type="email" name="email" classNameName="form-control" placeholder="email id" id="email" classNameNameName={`form-control mt-2 ${registerErrors.emailErrors ? "border-danger" : ""}`}
                 value={registerForm.email} onChange={handleFormChange}/>
-                <small className="text-danger mt-2">{registerErrors.emailErrors}</small>
+                <small classNameNameName="text-danger mt-2">{registerErrors.emailErrors}</small>
               </div>
-              <div class="form-group">
+              <div classNameName="form-group">
                 <label for="pwd">Password</label>
-                <input type="password" class="form-control" placeholder="password" id="pwd"
-                  className={`form-control mt-2 ${registerErrors.passwordErrors ? "border-danger" : ""}`}
+                <input type="password" classNameName="form-control" placeholder="password" id="pwd"
+                  classNameNameName={`form-control mt-2 ${registerErrors.passwordErrors ? "border-danger" : ""}`}
                   value={registerForm.password} onChange={handleFormChange}/>
-                <small className="text-danger mt-2">{registerErrors.passwordErrors}</small>
+                <small classNameNameName="text-danger mt-2">{registerErrors.passwordErrors}</small>
               </div>
-              <div class="form-group form-check">
-                <label class="form-check-label">
-                  <input class="form-check-input" type="checkbox"/>Remember me
+              <div classNameName="form-group form-check">
+                <label classNameName="form-check-label">
+                  <input classNameName="form-check-input" type="checkbox"/>Remember me
                 </label>
               </div>
-              <button type="submit" class="btn btn-primary" onClick={handleSubmit}>Sign In</button>
+              <button type="submit" classNameName="btn btn-primary" onClick={handleSubmit}>Sign In</button>
             </form>
             <p><a href=""> Forgot your password ?</a></p>
           </div>

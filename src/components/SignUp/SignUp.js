@@ -42,85 +42,85 @@ const SignUp = () => {
 
   return (
     <>
-      <div class="container-fluid bgd mb-0">
-        <div class="signup-form mb-0">
+      <div className="container-fluid bgd mb-0">
+        <div className="signup-form mb-0">
           <form action="/examples/actions/confirmation.php" method="post">
             <h2>Sign Up</h2>
             <p>Please fill in this form to create an account!</p>
             <hr></hr>
-            <div class="form-group">
-              <div class="row">
-                <div class="col">
-                  <input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"/>
+            <div className="form-group">
+              <div className="row">
+                <div className="col">
+                  <input type="text" className="form-control" name="first_name" placeholder="First Name" required="required"/>
                 </div>
-                <div class="col">
-                  <input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"/>
+                <div className="col">
+                  <input type="text" className="form-control" name="last_name" placeholder="Last Name" required="required"/>
                 </div>
               </div>
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="email"
-                class="form-control"
+                className="form-control"
                 name="email"
                 placeholder="Email"
                 required="required"
-                className={`form-control mt-2
+                classNameName={`form-control mt-2
 					${registerErrors.emailErrors ? "border-danger" : ""}`}
                 value={registerForm.email}
                 onChange={handleFormChange}
               />
-              <small className="text-danger mt-2">
+              <small classNameName="text-danger mt-2">
                 {registerErrors.emailErrors}
               </small>
               <br></br>
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="password"
-                class="form-control"
+                className="form-control"
                 name="password"
                 placeholder="Password"
                 required="required"
-                className={`form-control mt-2 ${
+                classNameName={`form-control mt-2 ${
                   registerErrors.passwordErrors ? "border-danger" : ""
                 }`}
                 value={registerForm.password}
                 onChange={handleFormChange}
               />
-              <small className="text-danger mt-2">
+              <small classNameName="text-danger mt-2">
                 {registerErrors.passwordErrors}
               </small>
               <br></br>
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <input
                 type="password"
-                class="form-control"
+                className="form-control"
                 name="confirm_password"
                 placeholder="Confirm Password"
                 required="required"
               />
             </div>
-            <div class="form-group">
-              <label class="form-check-label">
-                <input type="checkbox" required="required" className="mr-2" />I
+            <div className="form-group">
+              <label className="form-check-label">
+                <input type="checkbox" required="required" classNameName="mr-2" />I
                 accept the <a href="#">Terms of Use</a> &amp;
                 <a href="#">Privacy Policy</a>
               </label>
             </div>
-            <div class="form-group">
+            <div className="form-group">
               <button
                 type="submit"
-                class="btn btn-primary btn-lg"
+                className="btn btn-primary btn-lg"
                 onClick={handleSubmit}
               >
                 Sign Up
               </button>
             </div>
-            <div class="hint-text">
+            <div className="hint-text">
               Already have an account?
-              <a href="/signin" class="text-decoration-none text-primary">
+              <a href="/signin" className="text-decoration-none text-primary">
                 Login here
               </a>
             </div>

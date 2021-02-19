@@ -3,4 +3,6 @@
 .float-right {
     cursor: pointer;
 }
-
+.imgHeight{
+  height: 73%;
+}
