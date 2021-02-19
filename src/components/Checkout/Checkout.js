@@ -1,6 +1,5 @@
 import "./Checkout.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import product from "../../assets/Product_1.jpg";
 
 const Checkout = () => {
 
@@ -245,7 +244,7 @@ const Checkout = () => {
                     <tbody>
                       <tr>
                         <td>
-                          <a href="/"><img alt="Product Name" src={product} /></a>
+                          <a href="/"><img alt="Product Name" src="./assets/Product_1.jpg" /></a>
                         </td>
                         <td>
                           <a href="/">Product Name</a>
@@ -261,7 +260,7 @@ const Checkout = () => {
                       </tr>
                       <tr>
                         <td>
-                          <a href="/"><img alt="Product Name" src={product} /></a>
+                          <a href="/"><img alt="Product Name" src="./assets/Product_1.jpg" /></a>
                         </td>
                         <td>
                           <a href="/">Product Name</a>
@@ -277,7 +276,7 @@ const Checkout = () => {
                       </tr>
                       <tr>
                         <td>
-                          <a href="/"><img alt="Product Name" src={product} /></a>
+                          <a href="/"><img alt="Product Name" src="./assets/Product_1.jpg" /></a>
                         </td>
                         <td>
                           <a href="/">Product Name</a>

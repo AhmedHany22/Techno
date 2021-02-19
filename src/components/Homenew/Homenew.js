@@ -5,6 +5,7 @@ import ProductItem from "../products/product-item/productItem";
 import data from '../../data'
 const Homenew = () => {
   const products = data.products;
+
   return (
    <div>
   {/* first colums of product */}
@@ -135,6 +136,7 @@ const Homenew = () => {
       </div>
     </div>
   </div>
+
   <div class="container-fluid mt-5 ml-4">
     <div class="row justify-content-md-center">
       <h2 className="mb-5">New Arrivals Products</h2>
@@ -173,7 +175,6 @@ const Homenew = () => {
       </figure>
     </div>
   </div>
-
   <div class="container-fluid mt-5 ml-4">
     <div class="row justify-content-md-center">
       <h2 className="mb-5">Special discount products</h2>

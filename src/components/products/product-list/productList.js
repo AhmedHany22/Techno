@@ -5,6 +5,7 @@ import { listProducts } from "../../../store/actions/ProductActions";
 import LoadingBox from "../../LoadingBox";
 import MessageBox from "../../MessageBox";
 
+
 export default function ProductList(){
 
     const [category,setCategory]=useState([]);
@@ -31,15 +32,15 @@ export default function ProductList(){
           padgeNumpers.push(index+1)
           
         }
-      }
+    }
      
-      const getSliceArrayOfProduct=()=>{
+    const getSliceArrayOfProduct=()=>{
         calculateNumberOfPages(productList.products?.data?.length)
         const start=pageSize*currentPage;
         return productList.products?.data?.slice?.(start,start+pageSize);
-      }
-
-      console.log(getSliceArrayOfProduct());
+    }
+    console.log(getSliceArrayOfProduct());
+    
     return(
         <>
         <hr/>
@@ -74,6 +75,7 @@ export default function ProductList(){
                 <div className="row mb-3">
                 <div className="col-12 col-lg-5 pb-5">
                     <select className="form-control" name="" id="">
+
                     <option value="1">Featured</option>
                     <option value="2" >Price low to high</option>
                     <option value="3">Price high to low</option>
@@ -81,7 +83,6 @@ export default function ProductList(){
                     </select>
                 </div>
                 </div>
-
                 <div className="row">
                 {productList.loading? (
                     <div>
@@ -102,6 +103,7 @@ export default function ProductList(){
                     })
                 )}
                 
+
                 </div>
 
                 <div className="row">
@@ -126,3 +128,4 @@ export default function ProductList(){
         </>
     )
 }
+

@@ -1,7 +1,5 @@
 import "./Footer.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import appleImg from "../../assets/apple.png";
-import googleImg from "../../assets/google.png";
 import { Button, Form } from 'react-bootstrap';
 
 const Footer = () => {
@@ -98,10 +96,10 @@ const Footer = () => {
           <div className="col-md-3 footer-padding">
             <h6 className="mb-3 font-weight-bold pt-3">Get Our Store App</h6>
             <p>
-              <img src={googleImg} className="logo" />
+              <img src="../assets/google.png" className="logo" />
             </p>
             <p>
-              <img src={appleImg} className="logo" />
+              <img src="../assets/apple.png" className="logo" />
             </p>
           </div>
         </div>

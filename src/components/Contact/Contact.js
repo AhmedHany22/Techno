@@ -5,7 +5,7 @@ const Contact = () => {
 
   return (
     <>
-      <div className="container table">
+      <div className="container table pt-5">
         <div className="row" >
           <div className="col-lg-5 col-sm-12 col-md-12 info">
             <i className="fas fa-quote-left"></i>

@@ -1,14 +1,4 @@
 import "./About.css";
-import img1 from "../../assets/1.png";
-import img2 from "../../assets/2.jpg";
-import img3 from "../../assets/3.jpg";
-import img4 from "../../assets/4.jpg";
-import img5 from "../../assets/5.jpg";
-import img6 from "../../assets/6.jpg";
-import img7 from "../../assets/7.jpg";
-import img8 from "../../assets/8.jpg";
-import img9 from "../../assets/9.jpg";
-import img10 from "../../assets/10.jpg";
 
 const About = () => {
   return (
@@ -56,7 +46,7 @@ const About = () => {
           </div>
           <div className="col-md-6">
             <div className="experience-image px-4">
-              <img className="img-fluid" src={img1} />
+              <img className="img-fluid" src="./assets/About/1.png" />
             </div>
           </div>
         </div>
@@ -66,7 +56,7 @@ const About = () => {
           <div className="row my-4">
             <div className="col-md-4">
               <div className="portfolio-image m-2" data-toggle="modal" data-target="#modal1">
-                <img className="img-fluid" src={img1} />
+                <img className="img-fluid" src="./assets/About/1.png" />
                 <div className="image-container d-flex justify-content-center align-items-center">
                   <i className="fa fa-plus fa-4x text-white" id="plus"></i>
                 </div>
@@ -78,12 +68,12 @@ const About = () => {
                 <span aria-hidden="true">&times;</span>
               </button>
               <div className="modal-dialog modal-dialog-centered">
-                <img className="img-fluid" src={img2} />
+                <img className="img-fluid" src="./assets/About/2.jpg" />
               </div>
             </div>
             <div className="col-md-4">
               <div className="portfolio-image m-2"data-toggle="modal"data-target="#modal2">
-                <img className="img-fluid" src={img2} />
+                <img className="img-fluid" src="./assets/About/2.jpg" />
                 <div className="image-container d-flex justify-content-center align-items-center">
                   <i className="fa fa-plus fa-4x text-white" id="plus"></i>
                 </div>
@@ -95,12 +85,12 @@ const About = () => {
                 <span aria-hidden="true">&times;</span>
               </button>
               <div className="modal-dialog modal-dialog-centered">
-                <img className="img-fluid" src={img3} />
+                <img className="img-fluid" src="./assets/About/3.jpg" />
               </div>
             </div>
             <div className="col-md-4">
               <div className="portfolio-image m-2"data-toggle="modal"data-target="#modal3">
-                <img className="img-fluid" src={img3} />
+                <img className="img-fluid" src="./assets/About/3.jpg" />
                 <div className="image-container d-flex justify-content-center align-items-center">
                   <i className="fa fa-plus fa-4x text-white" id="plus"></i>
                 </div>
@@ -112,7 +102,7 @@ const About = () => {
                 <span aria-hidden="true">&times;</span>
               </button>
               <div className="modal-dialog modal-dialog-centered">
-                <img className="img-fluid" src={img4} />
+                <img className="img-fluid" src="./assets/About/4.jpg" />
               </div>
             </div>
           </div>
@@ -123,7 +113,7 @@ const About = () => {
                 data-toggle="modal"
                 data-target="#modal4"
               >
-                <img className="img-fluid" src={img4} />
+                <img className="img-fluid" src="./assets/About/4.jpg" />
                 <div className="image-container d-flex justify-content-center align-items-center">
                   <i className="fa fa-plus fa-4x text-white" id="plus"></i>
                 </div>
@@ -135,12 +125,12 @@ const About = () => {
                 <span aria-hidden="true">&times;</span>
               </button>
               <div className="modal-dialog modal-dialog-centered">
-                <img className="img-fluid" src={img5} />
+                <img className="img-fluid" src="./assets/About/5.jpg" />
               </div>
             </div>
             <div className="col-md-4">
               <div className="portfolio-image m-2"data-toggle="modal"data-target="#modal5">
-                <img className="img-fluid" src={img5} />
+                <img className="img-fluid" src="./assets/About/5.jpg" />
                 <div className="image-container d-flex justify-content-center align-items-center">
                   <i className="fa fa-plus fa-4x text-white" id="plus"></i>
                 </div>
@@ -152,12 +142,12 @@ const About = () => {
                 <span aria-hidden="true">&times;</span>
               </button>
               <div className="modal-dialog modal-dialog-centered">
-                <img className="img-fluid" src={img6} />
+                <img className="img-fluid" src="./assets/About/6.jpg" />
               </div>
             </div>
             <div className="col-md-4">
               <div className="portfolio-image m-2 m-2"data-toggle="modal"data-target="#modal6">
-                <img className="img-fluid" src={img6} />
+                <img className="img-fluid" src="./assets/About/6.jpg" />
                 <div className="image-container d-flex justify-content-center align-items-center">
                   <i className="fa fa-plus fa-4x text-white" id="plus"></i>
                 </div>
@@ -169,14 +159,14 @@ const About = () => {
                 <span aria-hidden="true">&times;</span>
               </button>
               <div className="modal-dialog modal-dialog-centered">
-                <img className="img-fluid" src={img7} />
+                <img className="img-fluid" src="./assets/About/7.jpg" />
               </div>
             </div>
           </div>
           <div className="row my-4">
             <div className="col-md-4">
               <div className="portfolio-image m-2"data-toggle="modal"data-target="#modal7">
-                <img className="img-fluid" src={img7} />
+                <img className="img-fluid" src="./assets/About/7.jpg" />
                 <div className="image-container d-flex justify-content-center align-items-center">
                   <i className="fa fa-plus fa-4x text-white" id="plus"></i>
                 </div>
@@ -188,12 +178,12 @@ const About = () => {
                 <span aria-hidden="true">&times;</span>
               </button>
               <div className="modal-dialog modal-dialog-centered">
-                <img className="img-fluid" src={img10} />
+                <img className="img-fluid" src="./assets/About/10.jpg" />
               </div>
             </div>
             <div className="col-md-4">
               <div className="portfolio-image m-2"data-toggle="modal"data-target="#modal8">
-                <img className="img-fluid" src={img10} />
+                <img className="img-fluid" src="./assets/About/10.jpg" />
                 <div className="image-container d-flex justify-content-center align-items-center">
                   <i className="fa fa-plus fa-4x text-white" id="plus"></i>
                 </div>
@@ -205,12 +195,12 @@ const About = () => {
                 <span aria-hidden="true">&times;</span>
               </button>
               <div className="modal-dialog modal-dialog-centered">
-                <img className="img-fluid" src={img9} />
+                <img className="img-fluid" src="./assets/About/9.jpg" />
               </div>
             </div>
             <div className="col-md-4">
               <div className="portfolio-image m-2"data-toggle="modal"data-target="#modal9">
-                <img className="img-fluid" src={img9} />
+                <img className="img-fluid" src="./assets/About/9.jpg" />
                 <div className="image-container d-flex justify-content-center align-items-center">
                   <i className="fa fa-plus fa-4x text-white" id="plus"></i>
                 </div>
@@ -222,7 +212,7 @@ const About = () => {
                 <span aria-hidden="true">&times;</span>
               </button>
               <div className="modal-dialog modal-dialog-centered">
-                <img className="img-fluid" src={img8} />
+                <img className="img-fluid" src="./assets/About/8.jpg" />
               </div>
             </div>
           </div>
@@ -233,7 +223,7 @@ const About = () => {
           <div className="row">
             <div className="col-md-6">
               <div className="experience-image pr-5">
-                <img className="img-fluid pr-5" src={img8} />
+                <img className="img-fluid pr-5" src="./assets/About/8.jpg" />
               </div>
             </div>
             <div className="col-md-6">
