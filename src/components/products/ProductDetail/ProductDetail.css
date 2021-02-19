@@ -78,7 +78,7 @@
   color: #556575;
   font-size: 17px;
   line-height: 1.5;
-  background-image: url(../../assets/background.png);
+  background-image: url(../../../assets/background.png);
 }
 .section .home a {
   color: #556575;
@@ -186,7 +186,7 @@
   color: #556575;
   font-size: 17px;
   line-height: 1.5;
-  background-image: url(../../assets/background.png);
+  background-image: url(../../../assets/background.png);
 }
 .section .layout div {
   margin: 0;
@@ -232,7 +232,7 @@
   color: #556575;
   font-size: 17px;
   line-height: 1.5;
-  background-image: url(../../assets/background.png);
+  background-image: url(../../../assets/background.png);
   display: flex;
   font-size: 18px;
   justify-content: space-between;
@@ -257,7 +257,7 @@
   color: #556575;
   font-size: 17px;
   line-height: 1.5;
-  background-image: url(../../assets/background.png);
+  background-image: url(../../../assets/background.png);
 }
 .description a {
   color: #556575;
@@ -307,7 +307,7 @@
   color: #556575;
   font-size: 17px;
   line-height: 1.5;
-  background-image: url(../../assets/background.png);
+  background-image: url(../../../assets/background.png);
   font-size: 18px;
 }
 .description #menu1 .addInfo {
@@ -319,7 +319,7 @@
   color: #556575;
   font-size: 17px;
   line-height: 1.5;
-  background-image: url(../../assets/background.png);
+  background-image: url(../../../assets/background.png);
   margin-top: 50px;
 }
 .description #menu2 .veiw1 {
@@ -454,7 +454,7 @@
   color: #556575;
   font-size: 17px;
   line-height: 1.5;
-  background-image: url(../../assets/background.png);
+  background-image: url(../../../assets/background.png);
   opacity: 1;
   font-size: 25;
   padding: 10px;
@@ -509,7 +509,7 @@
   color: #556575;
   font-size: 17px;
   line-height: 1.5;
-  background-image: url(../../assets/background.png);
+  background-image: url(../../../assets/background.png);
 }
 .content i {
   font-size: 22px;
@@ -531,7 +531,7 @@
   color: #556575;
   font-size: 17px;
   line-height: 1.5;
-  background-image: url(../../assets/background.png);
+  background-image: url(../../../assets/background.png);
 }
 .bodyLogin .row {
   justify-content: center;

@@ -1,8 +1,8 @@
 import "./ProductDetail.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import image from "../../assets/4.jpg";
-import ProductItem from "../products/product-item/productItem";
-import data from '../../data'
+import image from "../../../assets/4.jpg";
+import ProductItem from "../product-item/productItem";
+import data from '../../../data'
 
 const ProductDetail = () => {
   const products = data.products;
@@ -78,12 +78,11 @@ const ProductDetail = () => {
               <span className="glyphicon glyphicon-chevron-right"></span>
             </a>
           </div>
-          <div className="col-lg-6 col-md-12 col-sm-12">
-            <div className="home">
-              <div className="head">
-                <a href="../Nancy/home.html">Home</a>/
-                <a href="../Aisha/shop.html">Sofa Labtops</a>/ Albert Armchair,
-                Nubuck White
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="home">
+              <div class="head">
+                <a href="/">Home</a>/
+                <a href="/shop">Sofa Labtops</a>/ Albert Armchair,Nubuck White
               </div>
               <h1 className="details">Albert Armchair, Nubuck White</h1>
               <div className="view">
@@ -118,40 +117,26 @@ const ProductDetail = () => {
                 <h4>Categories</h4>
                 <h4>Tags</h4>
               </div>
-              <div className="info">
-                82934
-                <br />
-                <br />
-                <a href="../Aisha/shop.html">Armhair</a>,{" "}
-                <a href="../Aisha/shop.html">Wooden Leg</a>,{" "}
-                <a href="../Aisha/shop.html">Satin</a>
-                <br />
-                <br />
-                <a href="../Aisha/shop.html">Tosca</a>,{" "}
-                <a href="../Aisha/shop.html">Living Room</a>,{" "}
-                <a href="../Aisha/shop.html">Modern</a>
+              <div class="info">82934
+                <br /><br />
+                <a href="/shop">Armhair</a>,{" "}
+                <a href="/shop">Wooden Leg</a>,{" "}
+                <a href="/shop">Satin</a>
+                <br /><br />
+                <a href="/shop">Tosca</a>,{" "}
+                <a href="/shop">Living Room</a>,{" "}
+                <a href="/shop">Modern</a>
               </div>
             </div>
             <hr />
-            <div className="delivery">
-              <a href="" className="fas fa-map-marker-alt">
-                {" "}
-                Store availability
-              </a>
-              <a href="" className="fas fa-sync-alt">
-                {" "}
-                Delivery and return
-              </a>
-              <a href="contant.html" className="fas fa-comments">
-                {" "}
-                Ask a question
-              </a>
+            <div class="delivery">
+              <a href="" class="fas fa-map-marker-alt">{" "}Store availability</a>
+              <a href="" class="fas fa-sync-alt">{" "}Delivery and return</a>
+              <a href="/contact" class="fas fa-comments">{" "}Ask a question</a>
             </div>
             <hr />
-            <div className="share">
-              <a href="../Ahmed/Shopping-Cart.html" className="far fa-heart">
-                &nbsp; Add to wishlist
-              </a>
+            <div class="share">
+              <a href="/shoppingCart" class="far fa-heart">&nbsp; Add to wishlist</a>
               <div>
                 <p className="share">Share</p>
                 <a
